@@ -17,17 +17,17 @@ header{
   .location{
     width: 0.44rem;
     height: 0.44rem;
-    background: url($img+"/home/location.png") no-repeat center/100% 100%;
+    background: url($img +"/home/location.png") no-repeat center/100% 100%;
   }
   .title{
     width: 1.47rem;
     height: 100%;
-    background: url($img+"/home/title.png") no-repeat center/100% auto;
+    background: url($img +"/home/title.png") no-repeat center/100% auto;
   }
   .setting{
     width: 0.44rem;
     height: 0.44rem;
-    background: url($img+"/home/setting.png") no-repeat center/100% 100%;
+    background: url($img +"/home/setting.png") no-repeat center/100% 100%;
   }
 }
 
@@ -59,7 +59,7 @@ header{
     }
     li.active {
       @include circle(.18rem);
-      background: url($img+"/home/banner_shuffling.png") no-repeat center/cover;
+      background: url($img +"/home/banner_shuffling.png") no-repeat center/cover;
     }
   }
 }
@@ -76,6 +76,13 @@ header{
     background: #000;
     opacity: .5;
   }
+  .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   .content {
     position: absolute;
     top: 0;
@@ -85,7 +92,7 @@ header{
     .header {
       width: 1.05rem;
       height: .44rem;
-      background: url($img+"/home/banner_point.png") no-repeat left 68%;
+      background: url($img +"/home/banner_point.png") no-repeat left 68%;
       text-align: center;
       line-height: .55rem;
       font-size: .2rem;
@@ -104,10 +111,10 @@ header{
         align-items: center;
         a {
           @include cube(.3rem);
-          background: url($img+"/home/banner_search.png") no-repeat center/cover;
+          background: url($img +"/home/banner_search.png") no-repeat center/cover;
         }
         a:first-child {
-          background: url($img+"/home/banner_voice.png") no-repeat center top/auto .4rem;
+          background: url($img +"/home/banner_voice.png") no-repeat center top/auto .4rem;
         }
         div {
           width: 1px;
@@ -240,7 +247,7 @@ header{
     .title .camera{
       width: 0.32rem;
       height: 0.32rem;
-      background: url($img+"/home/subject_camera.png") no-repeat center/100% 100%;
+      background: url($img +"/home/subject_camera.png") no-repeat center/100% 100%;
     }
     .title .word{
       margin-left: 0.02rem;
@@ -262,13 +269,13 @@ header{
     .item_content .img{
       width: 100%;
       height: 1.3rem;
-      background: url($img+"/home/subject01.png") no-repeat center/1.95rem 100%;
+      background: url($img +"/home/subject01.png") no-repeat center/1.95rem 100%;
       margin: 0 auto;
     }
     .item_content .point{
       width: 0.12rem;
       height: 0.12rem;
-      background: url($img+"/home/subject_point.png") no-repeat center/100% 100%;
+      background: url($img +"/home/subject_point.png") no-repeat center/100% 100%;
       position: absolute;
     }
     .item_content .point:nth-child(3){
@@ -297,7 +304,7 @@ header{
     .item_bac .car{
       width: 0.64rem;
       height: 0.32rem;
-      background: url($img+"/home/subject_car.png") no-repeat center/100% 100%;
+      background: url($img +"/home/subject_car.png") no-repeat center/100% 100%;
       position: absolute;
       top: -0.28rem;
       left: 0;
@@ -305,10 +312,10 @@ header{
       margin: auto;
     }
     .item:nth-child(2) .item_content .img{
-      background: url($img+"/home/subject02.png") no-repeat center/1.95rem 100%;
+      background: url($img +"/home/subject02.png") no-repeat center/1.95rem 100%;
     }
     .item:nth-child(3) .item_content .img{
-      background: url($img+"/home/subject03.png") no-repeat center/1.95rem 100%;
+      background: url($img +"/home/subject03.png") no-repeat center/1.95rem 100%;
     }
   }
 }
@@ -363,7 +370,7 @@ header{
         float: left;
         width: 0.26rem;
         height: 0.29rem;
-        background: url($img+"/home/spot_medal.png") no-repeat center/100% 100%;
+        background: url($img +"/home/spot_medal.png") no-repeat center/100% 100%;
         margin-right: 0.15rem;
       }
     }
@@ -383,7 +390,7 @@ header{
         height: 0.28rem;
         border-radius: 50%;
         box-shadow: 0 0 0.05rem #ccc;
-        background: url($img+"/home/spot_mark.png") no-repeat center/0.2rem;
+        background: url($img +"/home/spot_mark.png") no-repeat center/0.2rem;
       }
       span{
         float: left;
@@ -394,7 +401,7 @@ header{
       }
     }
     .two .location .icon{
-      background: url($img+"/home/spot_location.png") no-repeat center/0.2rem;
+      background: url($img +"/home/spot_location.png") no-repeat center/0.2rem;
     }
     .two .detail{
       width: 0.88rem;
@@ -411,7 +418,7 @@ header{
         @debug ($i)-1;
         li:nth-child(#{$i}){
           left: 0.15rem*(($i)-1);
-          background: url($img+"/home/spot_detail#{$i}.jpg") no-repeat center top/100% auto;
+          background: url($img +"/home/spot_detail#{$i}.jpg") no-repeat center top/100% auto;
         }
       }
       li:nth-child(5){
@@ -425,7 +432,7 @@ header{
     }
     @for $i from 1 through 4{
       .item:nth-child(#{$i}) .img{
-        background: url($img+"/home/spot0#{$i}.png") no-repeat center bottom/100% 100%;
+        background: url($img +"/home/spot0#{$i}.png") no-repeat center bottom/100% 100%;
       }
     }
   }
@@ -451,7 +458,7 @@ header{
       float: left;
       width: 100%;
       height: 2.86rem;
-      background: url($img+"/home/log01.png") no-repeat center -0.8rem/100% auto;
+      background: url($img +"/home/log01.png") no-repeat center -0.8rem/100% auto;
     }
     .item .item_content{
       float: left;
@@ -497,7 +504,7 @@ header{
       $remark: 'log_letter' 'log_heart' 'log_star_';
       @for $i from 1 through 3{
         .remark li:nth-child(#{$i}) .icon{
-          background: url($img+"/home/#{nth($remark,$i)}.png") no-repeat center/0.2rem;
+          background: url($img +"/home/#{nth($remark,$i)}.png") no-repeat center/0.2rem;
         }
       }
     }
@@ -517,7 +524,7 @@ header{
         width: 1rem;
         height: 1rem;
         border-radius: 50%;
-        background: url($img+"/home/log_person01.png") no-repeat center/100% 100%;
+        background: url($img +"/home/log_person01.png") no-repeat center/100% 100%;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -532,7 +539,7 @@ header{
       .score li{
         width: 0.2rem;
         height: 0.2rem;
-        background: url($img+"/home/log_star.png") no-repeat center/100% 100%;
+        background: url($img +"/home/log_star.png") no-repeat center/100% 100%;
       }
       .follow{
         width: 1.1rem;
@@ -551,7 +558,7 @@ header{
     $logimg: log01 log02 log03;
     @for $i from 1 through 3{
       .item:nth-child(#{$i}) .img{
-        background: url($img+"/home/#{nth($logimg,$i)}.png") no-repeat center/100% 100%;
+        background: url($img +"/home/#{nth($logimg,$i)}.png") no-repeat center/100% 100%;
       }
     }
   }
@@ -587,7 +594,7 @@ header{
     $recommend: recommend01 recommend02 recommend03;
     @for $i from 1 through 3{
       .item:nth-child(#{$i}){
-        background: url($img+"/home/#{nth($recommend,$i)}.png") no-repeat center/100% 100%;
+        background: url($img +"/home/#{nth($recommend,$i)}.png") no-repeat center/100% 100%;
       }
     }
     .bacPoint{
@@ -611,7 +618,7 @@ header{
     .liBox{
       width: 1.98rem;
       height: 0.42rem;
-      background: url($img+"/home/007.png") no-repeat center/100% 100%;
+      background: url($img +"/home/007.png") no-repeat center/100% 100%;
       position: absolute;
       top: -0.13rem;
       left: 0;
@@ -689,7 +696,7 @@ footer{
     .div_008{
       width: 1rem;
       height: 1.14rem;
-      background: url($img+"/home/008.png") no-repeat center/100% 100%;
+      background: url($img +"/home/008.png") no-repeat center/100% 100%;
       position: absolute;
       top: -0.1rem;
       left: -0.22rem;
@@ -707,7 +714,7 @@ footer{
   $footer_img: footer01 footer02 footer03 footer04;
   @for $i from 1 through 4{
     li:nth-child(#{$i}) .img{
-      background: url($img+"/home/#{nth($footer_img,$i)}.png") no-repeat center/100% 100%;
+      background: url($img +"/home/#{nth($footer_img,$i)}.png") no-repeat center/100% 100%;
     }
   }
   li:nth-child(1){
@@ -722,14 +729,14 @@ footer{
   li:nth-child(4){
     margin-right: 0.5rem;
     .img{
-      background: url($img+"/home/footer04.png") no-repeat center/120% 100%;
+      background: url($img +"/home/footer04.png") no-repeat center/120% 100%;
     }
   }
   .add{
     width: 1.16rem;
     height: 1.16rem;
     border-radius: 50%;
-    background: #fff url($img+"/home/add.png") no-repeat center/1.01rem 1.01rem;
+    background: #fff url($img +"/home/add.png") no-repeat center/1.01rem 1.01rem;
     box-shadow: 0 0 0.05rem #76A276;
     position: absolute;
     top: -0.58rem;

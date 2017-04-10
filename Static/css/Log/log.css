@@ -21,7 +21,10 @@
     font-size: 100px; } }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  background: #F5F5F5;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "苹方 粗体","微软雅黑",sans-serif; }
 
 .header {
   width: 100%;
@@ -37,15 +40,15 @@ body {
     .header .container .location {
       width: .43rem;
       height: .43rem;
-      background: url(../imgs/location.png) no-repeat center/cover; }
+      background: url("/Static/img/Log/location.png") no-repeat center/cover; }
     .header .container .title {
       width: 1.5rem;
       height: .62rem;
-      background: url(../imgs/title.png) no-repeat center/cover; }
+      background: url("/Static/img/Log/title.png") no-repeat center/cover; }
     .header .container .set {
       width: .43rem;
       height: .43rem;
-      background: url(../imgs/set.png) no-repeat center/cover; }
+      background: url("/Static/img/Log/set.png") no-repeat center/cover; }
 
 .banner {
   width: 100%;
@@ -76,7 +79,7 @@ body {
       width: 0.18rem;
       height: 0.18rem;
       border-radius: 50%;
-      background: url(../imgs/shuffling.png) no-repeat center/cover; }
+      background: url("/Static/img/Log/shuffling.png") no-repeat center/cover; }
   .banner .fixed {
     width: 100%;
     height: 1rem;
@@ -88,6 +91,12 @@ body {
       height: 100%;
       background: #000;
       opacity: .5; }
+    .banner .fixed .mask {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
     .banner .fixed .content {
       position: absolute;
       top: 0;
@@ -97,7 +106,7 @@ body {
       .banner .fixed .content .head {
         width: 1.05rem;
         height: .44rem;
-        background: url(../imgs/point.png) no-repeat left 68%;
+        background: url("/Static/img/Log/point.png") no-repeat left 68%;
         text-align: center;
         line-height: .55rem;
         font-size: .2rem;
@@ -115,14 +124,15 @@ body {
           .banner .fixed .content form .search a {
             width: 0.3rem;
             height: 0.3rem;
-            background: url(../imgs/search.png) no-repeat center/cover; }
+            background: url("/Static/img/Log/search.png") no-repeat center/cover; }
           .banner .fixed .content form .search a:first-child {
-            background: url(../imgs/voice.png) no-repeat center top/auto 0.4rem; }
+            background: url("/Static/img/Log/voice.png") no-repeat center top/auto 0.4rem; }
           .banner .fixed .content form .search span {
             color: #fff; }
       .banner .fixed .content input {
         width: 100%;
         height: .4rem;
+        border: none;
         border-bottom: .02rem solid #6684ab;
         font-size: .24rem;
         outline: none;
@@ -139,7 +149,7 @@ body {
       width: 100%;
       height: 2.9rem;
       margin-bottom: .11rem;
-      background: url(../imgs/list1.png) no-repeat center/contain;
+      background: url("/Static/img/Log/list1.png") no-repeat center/contain;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -205,13 +215,13 @@ body {
       background: none;
       margin-top: -.2rem; }
     .content ul li:nth-child(2) {
-      background: url(../imgs/list2.png) no-repeat center/contain; }
+      background: url("/Static/img/Log/list2.png") no-repeat center/contain; }
     .content ul li:nth-child(3) {
-      background: url(../imgs/list3.png) no-repeat center/contain; }
+      background: url("/Static/img/Log/list3.png") no-repeat center/contain; }
     .content ul li:nth-child(4) {
-      background: url(../imgs/list4.png) no-repeat center/contain; }
+      background: url("/Static/img/Log/list4.png") no-repeat center/contain; }
     .content ul li:nth-child(5) {
-      background: url(../imgs/list5.png) no-repeat center/contain; }
+      background: url("/Static/img/Log/list5.png") no-repeat center/contain; }
 
 .footer {
   width: 100%;
@@ -231,7 +241,7 @@ body {
     .footer ul li {
       width: 1.1rem;
       height: 100%;
-      background: url(../imgs/table1.png) no-repeat center top/0.56rem 0.56rem;
+      background: url("/Static/img/Log/table1.png") no-repeat center top/0.56rem 0.56rem;
       position: relative;
       text-align: center; }
       .footer ul li p {
@@ -242,14 +252,20 @@ body {
         font-family: 'PingFang SC Regular', '微软雅黑', sans-serif;
         font-size: .22rem;
         color: #d8d8d8; }
+      .footer ul li a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; }
     .footer ul li:nth-child(2) {
       height: 1.05rem;
       margin-top: -.12rem;
-      background: url(../imgs/table2.png) no-repeat center top/cover; }
+      background: url("/Static/img/Log/table2.png") no-repeat center top/cover; }
     .footer ul li:nth-child(3) {
       margin-top: -.5rem;
-      background: url(../imgs/table3.png) no-repeat center top/cover; }
+      background: url("/Static/img/Log/table3.png") no-repeat center top/cover; }
     .footer ul li:nth-child(4) {
-      background: url(../imgs/table4.png) no-repeat center top/0.56rem 0.56rem; }
+      background: url("/Static/img/Log/table4.png") no-repeat center top/0.56rem 0.56rem; }
     .footer ul li:nth-child(5) {
-      background: url(../imgs/table5.png) no-repeat center top/0.56rem 0.56rem; }
+      background: url("/Static/img/Log/table5.png") no-repeat center top/0.56rem 0.56rem; }
