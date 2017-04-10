@@ -37,15 +37,15 @@ body {
     .header .container .location {
       width: .43rem;
       height: .43rem;
-      background: url("/Static/img/log/location.png") no-repeat center/cover; }
+      background: url(../imgs/location.png) no-repeat center/cover; }
     .header .container .title {
       width: 1.5rem;
       height: .62rem;
-      background: url("/Static/img/log/title.png") no-repeat center/cover; }
+      background: url(../imgs/title.png) no-repeat center/cover; }
     .header .container .set {
       width: .43rem;
       height: .43rem;
-      background: url("/Static/img/log/set.png") no-repeat center/cover; }
+      background: url(../imgs/set.png) no-repeat center/cover; }
 
 .banner {
   width: 100%;
@@ -76,7 +76,7 @@ body {
       width: 0.18rem;
       height: 0.18rem;
       border-radius: 50%;
-      background: url("/Static/img/log/shuffling.png") no-repeat center/cover; }
+      background: url(../imgs/shuffling.png) no-repeat center/cover; }
   .banner .fixed {
     width: 100%;
     height: 1rem;
@@ -97,7 +97,7 @@ body {
       .banner .fixed .content .head {
         width: 1.05rem;
         height: .44rem;
-        background: url("/Static/img/log/point.png") no-repeat left 68%;
+        background: url(../imgs/point.png) no-repeat left 68%;
         text-align: center;
         line-height: .55rem;
         font-size: .2rem;
@@ -115,21 +115,19 @@ body {
           .banner .fixed .content form .search a {
             width: 0.3rem;
             height: 0.3rem;
-            background: url("/Static/img/log/search.png") no-repeat center/cover; }
+            background: url(../imgs/search.png) no-repeat center/cover; }
           .banner .fixed .content form .search a:first-child {
-            background: url("/Static/img/log/voice.png") no-repeat center top/auto 0.4rem; }
+            background: url(../imgs/voice.png) no-repeat center top/auto 0.4rem; }
           .banner .fixed .content form .search span {
             color: #fff; }
       .banner .fixed .content input {
         width: 100%;
         height: .4rem;
-        border: none;
         border-bottom: .02rem solid #6684ab;
         font-size: .24rem;
         outline: none;
         background: none;
-        padding-bottom: .06rem;
-        color: #a7a9a2; }
+        padding-bottom: .06rem; }
 
 .content {
   width: 100%;
@@ -141,7 +139,7 @@ body {
       width: 100%;
       height: 2.9rem;
       margin-bottom: .11rem;
-      background: url("/Static/img/log/list1.png") no-repeat center/contain;
+      background: url(../imgs/list1.png) no-repeat center/contain;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -207,13 +205,13 @@ body {
       background: none;
       margin-top: -.2rem; }
     .content ul li:nth-child(2) {
-      background: url("/Static/img/log/list2.png") no-repeat center/contain; }
+      background: url(../imgs/list2.png) no-repeat center/contain; }
     .content ul li:nth-child(3) {
-      background: url("/Static/img/log/list3.png") no-repeat center/contain; }
+      background: url(../imgs/list3.png) no-repeat center/contain; }
     .content ul li:nth-child(4) {
-      background: url("/Static/img/log/list4.png") no-repeat center/contain; }
+      background: url(../imgs/list4.png) no-repeat center/contain; }
     .content ul li:nth-child(5) {
-      background: url("/Static/img/log/list5.png") no-repeat center/contain; }
+      background: url(../imgs/list5.png) no-repeat center/contain; }
 
 .footer {
   width: 100%;
@@ -233,7 +231,7 @@ body {
     .footer ul li {
       width: 1.1rem;
       height: 100%;
-      background: url("/Static/img/log/table1.png") no-repeat center top/0.56rem 0.56rem;
+      background: url(../imgs/table1.png) no-repeat center top/0.56rem 0.56rem;
       position: relative;
       text-align: center; }
       .footer ul li p {
@@ -247,11 +245,11 @@ body {
     .footer ul li:nth-child(2) {
       height: 1.05rem;
       margin-top: -.12rem;
-      background: url("/Static/img/log/table2.png") no-repeat center top/cover; }
+      background: url(../imgs/table2.png) no-repeat center top/cover; }
     .footer ul li:nth-child(3) {
       margin-top: -.5rem;
-      background: url("/Static/img/log/table3.png") no-repeat center top/cover; }
+      background: url(../imgs/table3.png) no-repeat center top/cover; }
     .footer ul li:nth-child(4) {
-      background: url("/Static/img/log/table4.png") no-repeat center top/0.56rem 0.56rem; }
+      background: url(../imgs/table4.png) no-repeat center top/0.56rem 0.56rem; }
     .footer ul li:nth-child(5) {
-      background: url("/Static/img/log/table5.png") no-repeat center top/0.56rem 0.56rem; }
+      background: url(../imgs/table5.png) no-repeat center top/0.56rem 0.56rem; }

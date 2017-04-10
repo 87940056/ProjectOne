@@ -1,0 +1,369 @@
+$padding:0 0.24rem;
+@import "../mixin.scss";
+@import url(../base.css);
+.container-fluid{
+  width:100%;
+  padding:$padding;
+  height:100%;
+}
+$IMG_PATH:"/Static/img/search/";
+//头部开始
+.header{
+  width:100%;
+  height:1.1rem;
+  background:#1CC120;
+  .nav{
+    width:100%;
+    height:0.88rem;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-between;
+    align-items:center;
+    .return a{
+      display:block;
+      width:0.44rem;
+      height:0.44rem;
+      span{
+        display:block;
+        width:100%;
+        height:100%;
+        background:url($IMG_PATH +"back.png") no-repeat center center;
+        background-size:cover;
+      }
+    }
+    .title{
+      display:flex;
+      display:-webkit-flex;
+      flex-wrap:wrap;
+      flex-direction:column;
+      color:#fff;
+      justify-content:center;
+      align-items:center;
+      h2{
+        font-size:14px;
+      }
+      span{
+        font-size:10px;
+        font-weight:normal;
+      }
+    }
+  }
+  .search{
+    width:100%;
+    height:0.8rem;
+    background:#fff;
+    border-radius:0.12rem;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-around;
+    align-items:center;
+    button{
+      flex:0 0 20%;
+      font-size:15px;
+      color:#FCC727;
+      background:none;
+      border:0;
+      display:flex;
+      display:-webkit-flex;
+      justify-content:space-around;
+      align-items:center;
+      outline:none;
+      span{
+        display:block;
+        border-radius:50%;
+        width:0.05rem;
+        height:0.05rem;
+        &:nth-child(1){
+          background:#1D4BE9;
+        }
+        &:nth-child(2){
+          background:#1CC120;
+        }
+      }
+    }
+    .s-xian{
+      height:86%;
+      border:1px dashed #D3D3D3;
+      margin:0.1rem 0;
+    }
+    .search-p{
+      flex:0 0 60%;
+      height:100%;
+      border:0;
+      padding:0.1rem;
+      outline:none;
+      color:#727272;
+    }
+    .vioce{
+      display:block;
+      width:0.24rem;
+      height:0.4rem;
+      span{
+        display:block;
+        width:100%;
+        height:100%;
+        background:url($IMG_PATH +"voice.png") no-repeat center center;
+        background-size:cover;
+      }
+    }
+  }
+  .triangle{
+    width:100%;
+    height:0.2rem;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:center;
+    span::after{
+      display:block;
+      content:"";
+      width: 0;
+      height: 0;
+      border-left: 0.2rem solid transparent;
+      border-right: 0.2rem solid transparent;
+      border-top: 0.3rem solid #fff;
+    }
+  }
+}
+//搜索结果开始
+.search-result{
+  width:100%;
+  height:4.52rem;
+  background:#fff;
+  border-radius:0.12rem;
+  margin-top:0.9rem;
+  box-shadow:0 0.02rem 0.1rem #ECECEC;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:column;
+  justify-content:space-around;
+  .result{
+    width:100%;
+    height:auto;
+    li{
+      border-bottom:1px solid #EDEDED;
+      padding:0.2rem 0;
+      a{
+        display:flex;
+        display:-webkit-flex;
+        color:#999;
+        .location{
+          flex:0 0 10%;
+          display:flex;
+          display:-webkit-flex;
+          justify-content:center;
+          span{
+            display:block;
+            width:0.22rem;
+            height:0.3rem;
+            background:url($IMG_PATH +"location.png") no-repeat center center;
+            background-size:cover;
+          }
+        }
+        .result-title{
+          flex:0 0 20%;
+          display:flex;
+          display:-webkit-flex;
+          color:#666;
+          span{
+            color:#FCC727;
+          }
+        }
+        .china{
+          flex:0 0 20%;
+          display:flex;
+          display:-webkit-flex;
+          justify-content:center;
+        }
+        .fire{
+          flex:0 0 30%;
+          display:flex;
+          display:-webkit-flex;
+          align-items:center;
+          span{
+            display:block;
+            width:0.2rem;
+            height:0.24rem;
+            margin:0 0.05rem;
+            background:url($IMG_PATH +"fire.png") no-repeat center center;
+            background-size:cover;
+          }
+        }
+      }
+    }
+  }
+  .result-hint{
+    width:100%;
+    height:auto;
+    padding:0.2rem 0;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:center;
+    align-items:center;
+    .images{
+      width:0.94rem;
+      height:0.98rem;
+      margin-right:0.15rem;
+      span{
+        display:block;
+        width:100%;
+        height:100%;
+        background:url($IMG_PATH +"squirrel.png") no-repeat center center;
+        background-size:cover;
+      }
+    }
+    h3{
+      font-size:12px;
+      color:#999;
+      code{
+        color:#FCC727;
+      }
+    }
+  }
+}
+//猜你喜欢开始
+.guess-like{
+  width:100%;
+  height:auto;
+  .like-title{
+    padding:0.3rem 0 0.24rem;
+    display:flex;
+    display:-webkit-flex;
+    .collect{
+      display:block;
+      width:0.54rem;
+      height:0.54rem;
+      background:url($IMG_PATH +"collect.png") no-repeat center center;
+      background-size:cover;
+      margin-right:0.1rem;
+    }
+    h2{
+      display:flex;
+      display:-webkit-flex;
+      flex-direction:column;
+      font-size:14px;
+      color:#333;
+
+      span{
+        font-size:12px;
+        color:#666;
+        code{
+          color:#1CC120;
+        }
+      }
+    }
+  }
+  .like-list{
+    width:100%;
+    height:auto;
+    ul li{
+      width:100%;
+      height:1.8rem;
+      background:#fff;
+      border-radius:0.15rem;
+      position:relative;
+      display:flex;
+      display:-webkit-flex;
+      overflow:hidden;
+      box-shadow:0 0.02rem 0.1rem #DADADA;
+      margin-bottom:0.22rem;
+      &:before{
+        position: absolute;
+        content: '';
+        width:0.26rem;
+        height:0.26rem;
+        background: #F5F5F5;
+        top:-0.13rem;
+        left:1.92rem;
+        border-radius: 100%;
+        box-shadow:0 0.02rem 0.05rem #DADADA;
+      }
+      &:after{
+        position: absolute;
+        content: '';
+        width:0.26rem;
+        height:0.26rem;
+        background: #F5F5F5;
+        bottom:-0.13rem;
+        left:1.92rem;
+        border-radius: 100%;
+        box-shadow:0.02rem 0 0.05rem #DADADA;
+      }
+      .images{
+        flex:0 0 29%;
+        span{
+          display:block;
+          width:100%;
+          height:100%;
+          background:url($IMG_PATH +"like_1.png") no-repeat center center;
+          background-size:cover;
+        }
+      }
+      &:nth-child(2) .images span{
+        background:url($IMG_PATH +"like_2.png") no-repeat center center;
+        background-size:cover;
+      }
+      &:nth-child(3) .images span{
+        background:url($IMG_PATH +"like_3.png") no-repeat center center;
+        background-size:cover;
+      }
+      .list-left{
+        height:100%;
+        padding-left:0.2rem;
+        display:flex;
+        display:-webkit-flex;
+        flex-direction:column;
+        justify-content:space-around;
+        h3 a{
+          display:block;
+          color:#333;
+          font-size:15px;
+        }
+        span,p{
+          font-size:9px;
+          color:#666;
+        }
+        p{
+          -webkit-line-clamp:1;
+          display:-webkit-box;
+          -webkit-box-orient:vertical;
+          text-overflow:ellipsis;
+          overflow:hidden;
+        }
+        .list-regard{
+          width:100%;
+          height:auto;
+          display:flex;
+          display:-webkit-flex;
+          span{
+            flex:0 0 33.33333%;
+            height:auto;
+            display:flex;
+            display:-webkit-flex;
+            font-size:9px;
+            color:#666;
+            code{
+              display:block;
+              width:0.22rem;
+              height:0.22rem;
+              margin-right:0.1rem;
+            }
+          }
+          .browse code{
+            background:url($IMG_PATH +"browse.png") no-repeat center center;
+            background-size:cover;
+          }
+          .love code{
+            background:url($IMG_PATH +"love.png") no-repeat center center;
+            background-size:cover;
+          }
+          .location code{
+            width:0.18rem;
+            height:0.24rem;
+            background:url($IMG_PATH +"location.png") no-repeat center center;
+            background-size:cover;
+          }
+        }
+      }
+    }
+  }
+}

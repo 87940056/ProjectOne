@@ -1,7 +1,7 @@
 @import "../mixin";
 @import url('../base.css');
 
-$img:'/Static/img/';
+$img:'Static/img/';
 .header{
   width: 100%;
   height: .88rem;
@@ -16,17 +16,17 @@ $img:'/Static/img/';
     .location{
       width: .43rem;
       height: .43rem;
-      background: url($img + 'log/location.png') no-repeat center/cover;
+      background: url(../imgs/location.png) no-repeat center/cover;
     }
     .title{
       width: 1.5rem;
       height: .62rem;
-      background: url($img + 'log/title.png') no-repeat center/cover;
+      background: url(../imgs/title.png) no-repeat center/cover;
     }
     .set{
       width: .43rem;
       height: .43rem;
-      background: url($img + 'log/set.png') no-repeat center/cover;
+      background: url(../imgs/set.png) no-repeat center/cover;
     }
   }
 }
@@ -58,7 +58,7 @@ $img:'/Static/img/';
     }
     li.active{
       @include circle(.18rem);
-      background: url($img + 'log/shuffling.png')no-repeat center/cover;
+      background: url(../imgs/shuffling.png)no-repeat center/cover;
     }
   }
   .fixed{
@@ -82,7 +82,7 @@ $img:'/Static/img/';
       .head{
         width: 1.05rem;
         height: .44rem;
-        background: url($img + 'log/point.png')no-repeat left 68%;
+        background: url(../imgs/point.png)no-repeat left 68%;
         text-align: center;
         line-height: .55rem;
         font-size: .2rem;
@@ -100,10 +100,10 @@ $img:'/Static/img/';
           justify-content: space-around;
           a{
             @include cube(.3rem);
-            background: url($img + 'log/search.png')no-repeat center/cover;
+            background: url(../imgs/search.png)no-repeat center/cover;
           }
           a:first-child{
-            background: url($img + 'log/voice.png')no-repeat center top/auto .4rem;
+            background: url(../imgs/voice.png)no-repeat center top/auto .4rem;
           }
           span{
             color: #fff;
@@ -113,13 +113,11 @@ $img:'/Static/img/';
       input{
         width: 100%;
         height: .4rem;
-        border: none;
         border-bottom: .02rem solid #6684ab;
         font-size: .24rem;
         outline:none;
         background: none;
         padding-bottom: .06rem;
-        color: #a7a9a2;
       }
     }
   }
@@ -134,7 +132,7 @@ $img:'/Static/img/';
       width: 100%;
       height: 2.9rem;
       margin-bottom: .11rem;
-      background: url($img + 'log/list1.png')no-repeat center/contain;
+      background: url(../imgs/list1.png)no-repeat center/contain;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -219,16 +217,16 @@ $img:'/Static/img/';
       margin-top: -.2rem;
     }
     li:nth-child(2){
-      background: url($img + 'log/list2.png')no-repeat center/contain;
+      background: url(../imgs/list2.png)no-repeat center/contain;
     }
     li:nth-child(3){
-      background: url($img + 'log/list3.png')no-repeat center/contain;
+      background: url(../imgs/list3.png)no-repeat center/contain;
     }
     li:nth-child(4){
-      background: url($img + 'log/list4.png')no-repeat center/contain;
+      background: url(../imgs/list4.png)no-repeat center/contain;
     }
     li:nth-child(5){
-      background: url($img +'log/list5.png')no-repeat center/contain;
+      background: url(../imgs/list5.png)no-repeat center/contain;
     }
   }
 }
@@ -250,7 +248,7 @@ $img:'/Static/img/';
     li{
       width: 1.1rem;
       height: 100%;
-      background: url($img + 'log/table1.png')no-repeat center top/.56rem .56rem;
+      background: url(../imgs/table1.png)no-repeat center top/.56rem .56rem;
       position: relative;
       text-align: center;
       p{
@@ -266,17 +264,17 @@ $img:'/Static/img/';
     li:nth-child(2){
       height: 1.05rem;
       margin-top: -.12rem;
-      background: url($img + 'log/table2.png')no-repeat center top/cover;
+      background: url(../imgs/table2.png)no-repeat center top/cover;
     }
     li:nth-child(3){
       margin-top: -.5rem;
-      background: url($img + 'log/table3.png')no-repeat center top/cover;
+      background: url(../imgs/table3.png)no-repeat center top/cover;
     }
     li:nth-child(4){
-      background: url($img + 'log/table4.png')no-repeat center top/.56rem .56rem;
+      background: url(../imgs/table4.png)no-repeat center top/.56rem .56rem;
     }
     li:nth-child(5){
-      background: url($img + 'log/table5.png')no-repeat center top/.56rem .56rem;
+      background: url(../imgs/table5.png)no-repeat center top/.56rem .56rem;
     }
   }
 }

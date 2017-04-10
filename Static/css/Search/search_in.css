@@ -1,0 +1,333 @@
+@charset "UTF-8";
+@import url(../base.css);
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px;
+  background: #F5F5F5;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "苹方 粗体","微软雅黑",sans-serif; }
+
+.container-fluid {
+  width: 100%;
+  padding: 0 0.24rem;
+  height: 100%; }
+
+.header {
+  width: 100%;
+  height: 1.1rem;
+  background: #1CC120; }
+  .header .nav {
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .nav .return a {
+      display: block;
+      width: 0.44rem;
+      height: 0.44rem; }
+      .header .nav .return a span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("/Static/img/search/back.png") no-repeat center center;
+        background-size: cover; }
+    .header .nav .title {
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      color: #fff;
+      justify-content: center;
+      align-items: center; }
+      .header .nav .title h2 {
+        font-size: 14px; }
+      .header .nav .title span {
+        font-size: 10px;
+        font-weight: normal; }
+  .header .search {
+    width: 100%;
+    height: 0.8rem;
+    background: #fff;
+    border-radius: 0.12rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center; }
+    .header .search button {
+      flex: 0 0 20%;
+      font-size: 15px;
+      color: #FCC727;
+      background: none;
+      border: 0;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-around;
+      align-items: center;
+      outline: none; }
+      .header .search button span {
+        display: block;
+        border-radius: 50%;
+        width: 0.05rem;
+        height: 0.05rem; }
+        .header .search button span:nth-child(1) {
+          background: #1D4BE9; }
+        .header .search button span:nth-child(2) {
+          background: #1CC120; }
+    .header .search .s-xian {
+      height: 86%;
+      border: 1px dashed #D3D3D3;
+      margin: 0.1rem 0; }
+    .header .search .search-p {
+      flex: 0 0 60%;
+      height: 100%;
+      border: 0;
+      padding: 0.1rem;
+      outline: none;
+      color: #727272; }
+    .header .search .vioce {
+      display: block;
+      width: 0.24rem;
+      height: 0.4rem; }
+      .header .search .vioce span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("/Static/img/search/voice.png") no-repeat center center;
+        background-size: cover; }
+  .header .triangle {
+    width: 100%;
+    height: 0.2rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center; }
+    .header .triangle span::after {
+      display: block;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 0.2rem solid transparent;
+      border-right: 0.2rem solid transparent;
+      border-top: 0.3rem solid #fff; }
+
+.search-result {
+  width: 100%;
+  height: 4.52rem;
+  background: #fff;
+  border-radius: 0.12rem;
+  margin-top: 0.9rem;
+  box-shadow: 0 0.02rem 0.1rem #ECECEC;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .search-result .result {
+    width: 100%;
+    height: auto; }
+    .search-result .result li {
+      border-bottom: 1px solid #EDEDED;
+      padding: 0.2rem 0; }
+      .search-result .result li a {
+        display: flex;
+        display: -webkit-flex;
+        color: #999; }
+        .search-result .result li a .location {
+          flex: 0 0 10%;
+          display: flex;
+          display: -webkit-flex;
+          justify-content: center; }
+          .search-result .result li a .location span {
+            display: block;
+            width: 0.22rem;
+            height: 0.3rem;
+            background: url("/Static/img/search/location.png") no-repeat center center;
+            background-size: cover; }
+        .search-result .result li a .result-title {
+          flex: 0 0 20%;
+          display: flex;
+          display: -webkit-flex;
+          color: #666; }
+          .search-result .result li a .result-title span {
+            color: #FCC727; }
+        .search-result .result li a .china {
+          flex: 0 0 20%;
+          display: flex;
+          display: -webkit-flex;
+          justify-content: center; }
+        .search-result .result li a .fire {
+          flex: 0 0 30%;
+          display: flex;
+          display: -webkit-flex;
+          align-items: center; }
+          .search-result .result li a .fire span {
+            display: block;
+            width: 0.2rem;
+            height: 0.24rem;
+            margin: 0 0.05rem;
+            background: url("/Static/img/search/fire.png") no-repeat center center;
+            background-size: cover; }
+  .search-result .result-hint {
+    width: 100%;
+    height: auto;
+    padding: 0.2rem 0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center; }
+    .search-result .result-hint .images {
+      width: 0.94rem;
+      height: 0.98rem;
+      margin-right: 0.15rem; }
+      .search-result .result-hint .images span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("/Static/img/search/squirrel.png") no-repeat center center;
+        background-size: cover; }
+    .search-result .result-hint h3 {
+      font-size: 12px;
+      color: #999; }
+      .search-result .result-hint h3 code {
+        color: #FCC727; }
+
+.guess-like {
+  width: 100%;
+  height: auto; }
+  .guess-like .like-title {
+    padding: 0.3rem 0 0.24rem;
+    display: flex;
+    display: -webkit-flex; }
+    .guess-like .like-title .collect {
+      display: block;
+      width: 0.54rem;
+      height: 0.54rem;
+      background: url("/Static/img/search/collect.png") no-repeat center center;
+      background-size: cover;
+      margin-right: 0.1rem; }
+    .guess-like .like-title h2 {
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: #333; }
+      .guess-like .like-title h2 span {
+        font-size: 12px;
+        color: #666; }
+        .guess-like .like-title h2 span code {
+          color: #1CC120; }
+  .guess-like .like-list {
+    width: 100%;
+    height: auto; }
+    .guess-like .like-list ul li {
+      width: 100%;
+      height: 1.8rem;
+      background: #fff;
+      border-radius: 0.15rem;
+      position: relative;
+      display: flex;
+      display: -webkit-flex;
+      overflow: hidden;
+      box-shadow: 0 0.02rem 0.1rem #DADADA;
+      margin-bottom: 0.22rem; }
+      .guess-like .like-list ul li:before {
+        position: absolute;
+        content: '';
+        width: 0.26rem;
+        height: 0.26rem;
+        background: #F5F5F5;
+        top: -0.13rem;
+        left: 1.92rem;
+        border-radius: 100%;
+        box-shadow: 0 0.02rem 0.05rem #DADADA; }
+      .guess-like .like-list ul li:after {
+        position: absolute;
+        content: '';
+        width: 0.26rem;
+        height: 0.26rem;
+        background: #F5F5F5;
+        bottom: -0.13rem;
+        left: 1.92rem;
+        border-radius: 100%;
+        box-shadow: 0.02rem 0 0.05rem #DADADA; }
+      .guess-like .like-list ul li .images {
+        flex: 0 0 29%; }
+        .guess-like .like-list ul li .images span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url("/Static/img/search/like_1.png") no-repeat center center;
+          background-size: cover; }
+      .guess-like .like-list ul li:nth-child(2) .images span {
+        background: url("/Static/img/search/like_2.png") no-repeat center center;
+        background-size: cover; }
+      .guess-like .like-list ul li:nth-child(3) .images span {
+        background: url("/Static/img/search/like_3.png") no-repeat center center;
+        background-size: cover; }
+      .guess-like .like-list ul li .list-left {
+        height: 100%;
+        padding-left: 0.2rem;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        .guess-like .like-list ul li .list-left h3 a {
+          display: block;
+          color: #333;
+          font-size: 15px; }
+        .guess-like .like-list ul li .list-left span, .guess-like .like-list ul li .list-left p {
+          font-size: 9px;
+          color: #666; }
+        .guess-like .like-list ul li .list-left p {
+          -webkit-line-clamp: 1;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+        .guess-like .like-list ul li .list-left .list-regard {
+          width: 100%;
+          height: auto;
+          display: flex;
+          display: -webkit-flex; }
+          .guess-like .like-list ul li .list-left .list-regard span {
+            flex: 0 0 33.33333%;
+            height: auto;
+            display: flex;
+            display: -webkit-flex;
+            font-size: 9px;
+            color: #666; }
+            .guess-like .like-list ul li .list-left .list-regard span code {
+              display: block;
+              width: 0.22rem;
+              height: 0.22rem;
+              margin-right: 0.1rem; }
+          .guess-like .like-list ul li .list-left .list-regard .browse code {
+            background: url("/Static/img/search/browse.png") no-repeat center center;
+            background-size: cover; }
+          .guess-like .like-list ul li .list-left .list-regard .love code {
+            background: url("/Static/img/search/love.png") no-repeat center center;
+            background-size: cover; }
+          .guess-like .like-list ul li .list-left .list-regard .location code {
+            width: 0.18rem;
+            height: 0.24rem;
+            background: url("/Static/img/search/location.png") no-repeat center center;
+            background-size: cover; }
