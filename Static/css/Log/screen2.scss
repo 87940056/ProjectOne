@@ -1,0 +1,117 @@
+@import "../mixin";
+@import url('../base.css');
+$img:'/Static/img/';
+.header{
+  width: 100%;
+  height: 1.06rem;
+  .main{
+    width: 7.02rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a{
+      margin-top: -.1rem;
+      display: block;
+      width: .86rem;
+      height: .36rem;
+      border-radius: .2rem;
+      border: 2px solid #1cc120;
+      font-family: 'PingFang SC Bold', '微软雅黑', sans-serif;
+      font-size: .24rem;
+      text-align: center;
+      line-height: .29rem;
+    }
+  }
+}
+.content{
+  width: 100%;
+  height: 11.84rem;
+  .main{
+    width: 7.02rem;
+    height: 100%;
+    margin: 0 auto;
+    .head{
+      width: 100%;
+      height: 7.5rem;
+      background: url($img + 'log/screen2.png') no-repeat center/auto 70%;
+      position: relative;
+      .people{
+        width: 2.18rem;
+        height: 4.32rem;
+        background:url($img + 'log/people.png')no-repeat center/contain;
+        position: absolute;
+        bottom: .25rem;
+        left: .3rem;
+      }
+      .private-car{
+        width: 1.86rem;
+        height: .92rem;
+        background: url($img + 'log/private-car.png') no-repeat center/contain;
+        position: absolute;
+        bottom: .71rem;
+        left: 2.93rem;
+      }
+      .balloon{
+        width: .68rem;
+        height: .96rem;
+        background: url($img + 'log/balloon.png') center/cover;
+        position: absolute;
+        top:0;
+        left: 2.05rem;
+      }
+    }
+    .character{
+      width: 100%;
+      text-align: center;
+      .chinese{
+        padding-bottom: .5rem;
+        p{
+          font-family: 'PingFang SC Regular', '微软雅黑', sans-serif;
+          font-size: .3rem;
+          color:#aeb6b9;
+        }
+        h1{
+          font-family: 'FZDHTFW GB1 0', '微软雅黑',sans-serif;
+          font-size: .6436rem;
+          color: #1cc120;
+        }
+      }
+      .english{
+        p{
+          font-family: 'SanFranciscoDisplay Bold', '微软雅黑', sans-serif;
+          font-size: .18rem;
+          color:#666666;
+        }
+        h3{
+          margin-top: .2rem;
+          font-family: 'PingFang SC Regular', '微软雅黑', sans-serif;
+          font-size: .16rem;
+          color:#a0a0a0;
+        }
+      }
+    }
+    ul{
+      width: 1rem;
+      height: .2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 auto;
+      align-items: center;
+      margin-top: .6rem;
+      li{
+        width: .1rem;
+        height: .1rem;
+        border-radius: 50%;
+        background: #fec516;
+      }
+      li.active{
+        width: .3rem;
+        height: .1rem;
+        border-radius: .05rem;
+      }
+    }
+  }
+}
