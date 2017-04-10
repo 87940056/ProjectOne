@@ -10,8 +10,11 @@ class indexController extends frameWork{
     function log(){
         $this->display('default/Log/Log');
     }
+    function log_detail(){
+        $this->display('default/Log/LogDetail');
+    }
     function car_rent(){
-        $this->display('default/CarrEnt/CarrEnt');
+        $this->display('default/CarrEnt/CarRent');
     }
     function personal(){
         $this->display('default/Personal/Personal');
@@ -27,6 +30,9 @@ class indexController extends frameWork{
     }
     function search_network(){
         $this->display('default/Search/search_network');
+    }
+    function Order_details(){
+        $this->display('default/Payment/OrderDetails');
     }
     function Choice_card(){
         $this->display('default/Payment/Choice_card');
