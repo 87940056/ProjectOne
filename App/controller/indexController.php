@@ -22,4 +22,13 @@ class indexController extends frameWork{
     function pay(){
         $this->display('default/Payment/OrderDetails');
     }
+    function Choice_card(){
+        $this->display('default/Payment/Choice_card');
+    }
+    function Payment_method(){
+        $this->display('default/Payment/Payment_method');
+    }
+    function password(){
+        $this->display('default/Payment/password');
+    }
 }

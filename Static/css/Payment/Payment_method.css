@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import url(../base.css);
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px;
+  background: #F5F5F5;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "苹方 粗体","微软雅黑",sans-serif; }
+
+.inner {
+  width: 92%;
+  margin: 0 auto; }
+
+.title {
+  width: 100%;
+  height: 3.42rem;
+  background: #1CC120; }
+  .title .title_inner {
+    height: 0.88rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; }
+    .title .title_inner .title_back {
+      display: inline-block;
+      width: 0.44rem;
+      height: 0.44rem;
+      background-image: url("/Static/img/pay/2.png");
+      background-size: cover; }
+    .title .title_inner .title_title {
+      margin: 0 auto;
+      color: #fff;
+      display: flex;
+      flex-direction: column; }
+      .title .title_inner .title_title h5 {
+        font-size: 0.28rem;
+        font-weight: normal;
+        text-align: center; }
+      .title .title_inner .title_title span {
+        font-size: 0.2rem; }
+    .title .title_inner .title_right {
+      width: 0.44rem;
+      height: 0.44rem; }
+  .title .order_list {
+    width: 6.24rem;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: #999 0px 0px 5px;
+    margin: 0 auto;
+    border-radius: 0.1rem;
+    margin-top: 0.35rem;
+    padding: 0.3rem 0.22rem; }
+    .title .order_list li {
+      border-bottom: 1px dashed #A3A2A2; }
+      .title .order_list li .list_number {
+        font-size: 0.24rem;
+        color: #A3A2A2; }
+      .title .order_list li .Car_info {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        display: flex; }
+        .title .order_list li .Car_info .left {
+          width: 1rem;
+          height: 1rem;
+          background-image: url("/Static/img/pay/18.png");
+          background-size: contain;
+          background-repeat: no-repeat; }
+        .title .order_list li .Car_info .right {
+          flex: 1;
+          padding-left: 0.2rem; }
+          .title .order_list li .Car_info .right h3 {
+            font-size: 0.3rem;
+            color: #535353;
+            display: flex;
+            align-items: center; }
+            .title .order_list li .Car_info .right h3 .fire {
+              width: 0.26rem;
+              height: 0.34rem;
+              background-image: url("/Static/img/pay/21.png");
+              background-size: cover;
+              margin: 0 0.1rem; }
+            .title .order_list li .Car_info .right h3 .new {
+              width: 0.7rem;
+              height: 0.27rem;
+              background-image: url("/Static/img/pay/22.png");
+              background-size: cover; }
+            .title .order_list li .Car_info .right h3 .logo {
+              width: 0.7rem;
+              height: 0.36rem;
+              background: #FF7C1C;
+              border-radius: 0.2rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-size: 0.27rem;
+              font-weight: normal;
+              margin-left: 0.15rem; }
+          .title .order_list li .Car_info .right i {
+            display: block;
+            width: 0.53rem;
+            height: 0.04rem;
+            background-image: url("/Static/img/pay/7.png");
+            background-size: contain;
+            margin: 0.05rem 0; }
+          .title .order_list li .Car_info .right p {
+            font-size: 0.24rem;
+            color: #A3A2A2; }
+          .title .order_list li .Car_info .right h4 {
+            font-size: 0.3rem;
+            color: #FF1652; }
+    .title .order_list li:nth-child(2) .Car_info .left {
+      background-image: url("/Static/img/pay/19.png"); }
+    .title .order_list li:nth-child(3) {
+      border-bottom: 0px; }
+      .title .order_list li:nth-child(3) .Car_info .left {
+        background-image: url("/Static/img/pay/20.png"); }
+  .title .third_party {
+    margin-top: 1rem; }
+    .title .third_party .inner .subject h3 {
+      font-size: 0.3rem; }
+    .title .third_party .inner .subject h4 {
+      font-size: 0.24rem;
+      color: #999999;
+      font-weight: normal; }
+    .title .third_party .inner .method {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.3rem; }
+      .title .third_party .inner .method li {
+        width: 3.39rem;
+        height: 1.87rem;
+        border-radius: 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+      .title .third_party .inner .method .alipay {
+        background: #0093FD; }
+        .title .third_party .inner .method .alipay .logo {
+          width: 1.18rem;
+          height: 0.9rem;
+          background-image: url("/Static/img/pay/23.png");
+          background-size: contain;
+          background-repeat: no-repeat; }
+        .title .third_party .inner .method .alipay .produce h4 {
+          font-size: 0.22rem;
+          color: #fff; }
+        .title .third_party .inner .method .alipay .produce h5 {
+          font-size: 0.14rem;
+          color: #fff; }
+      .title .third_party .inner .method .wechat {
+        background: #00C200; }
+        .title .third_party .inner .method .wechat .logo {
+          width: 1.18rem;
+          height: 0.9rem;
+          background-image: url("/Static/img/pay/24.png");
+          background-size: contain;
+          background-repeat: no-repeat; }
+        .title .third_party .inner .method .wechat .produce h4 {
+          font-size: 0.22rem;
+          color: #fff; }
+        .title .third_party .inner .method .wechat .produce h5 {
+          font-size: 0.14rem;
+          color: #fff; }
+  .title .pay_btn {
+    width: 6.24rem;
+    height: 0.87rem;
+    background: #1F93E4;
+    border-radius: 0.1rem;
+    margin: 0.8rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .title .pay_btn .logo {
+      width: 1.01rem;
+      height: 0.76rem;
+      background-image: url("/Static/img/pay/11.png");
+      background-size: contain; }
+    .title .pay_btn .produce {
+      align-self: flex-end; }
+      .title .pay_btn .produce p:nth-child(1) {
+        font-size: 0.26rem;
+        color: #fff; }
+      .title .pay_btn .produce p:nth-child(2) {
+        font-size: 0.2rem;
+        color: #fff; }
+
+.content {
+  height: auto;
+  background: none;
+  margin-top: -2.25rem; }

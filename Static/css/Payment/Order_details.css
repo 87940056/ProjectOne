@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url(../base.css);
 @media screen and (min-width: 320px) {
   html {
     font-size: 42.66667px; } }
@@ -10,10 +12,6 @@
   html {
     font-size: 50px; } }
 
-@media screen and (min-width: 412px) {
-  html {
-    font-size: 54.93333px; } }
-
 @media screen and (min-width: 414px) {
   html {
     font-size: 55.2px; } }
@@ -22,34 +20,15 @@
   html {
     font-size: 100px; } }
 
-body, p, pre, form, input, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0; }
-
 body {
-  font-size: 16px; }
-
-* {
-  box-sizing: border-box; }
+  font-size: 16px;
+  background: #F5F5F5;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "苹方 粗体","微软雅黑",sans-serif; }
 
 .inner {
   width: 92%;
   margin: 0 auto; }
-
-ul, li, ol, dl, dt, dd {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-a {
-  text-decoration: none;
-  color: #666666; }
-
-img {
-  border: 0; }
-
-input {
-  border: 0; }
 
 .title {
   width: 100%;
@@ -64,7 +43,7 @@ input {
       display: inline-block;
       width: 0.44rem;
       height: 0.44rem;
-      background-image: url("../imgs/2.png");
+      background-image: url("/Static/img/pay/2.png");
       background-size: cover; }
     .title .title_inner .title_title {
       margin: 0 auto;
@@ -101,7 +80,7 @@ input {
         .title .order_list li .Car_info .left {
           width: 1.6rem;
           height: 100%;
-          background-image: url("../imgs/6.png");
+          background-image: url("/Static/img/pay/6.png");
           background-size: contain;
           background-repeat: no-repeat; }
         .title .order_list li .Car_info .right {
@@ -114,7 +93,7 @@ input {
             display: block;
             width: 0.53rem;
             height: 0.04rem;
-            background-image: url("../imgs/7.png");
+            background-image: url("/Static/img/pay/7.png");
             background-size: contain;
             margin: 0.05rem 0; }
           .title .order_list li .Car_info .right p {
@@ -130,7 +109,7 @@ input {
     .title .order_details .left {
       width: 0.22rem;
       height: 2.61rem;
-      background-image: url("../imgs/17.png");
+      background-image: url("/Static/img/pay/17.png");
       background-size: contain;
       background-repeat: no-repeat; }
     .title .order_details .right {
@@ -178,7 +157,7 @@ input {
         display: inline-block;
         width: 0.8rem;
         height: 0.65rem;
-        background-image: url("../imgs/9.png");
+        background-image: url("/Static/img/pay/9.png");
         background-size: contain; }
       .title .pay .pay_title .introduce h5 {
         font-size: 0.26rem;
@@ -191,7 +170,7 @@ input {
       display: block;
       width: 6.05rem;
       height: 0.05rem;
-      background-image: url("../imgs/8.png");
+      background-image: url("/Static/img/pay/8.png");
       background-size: contain;
       margin: 0.18rem 0; }
     .title .pay .price {
@@ -204,7 +183,7 @@ input {
       .title .pay .price .discount .logo {
         width: 0.78rem;
         height: 0.28rem;
-        background-image: url("../imgs/10.png");
+        background-image: url("/Static/img/pay/10.png");
         background-size: cover; }
       .title .pay .price h1 {
         font-size: 0.96rem;
@@ -250,7 +229,7 @@ input {
     .title .pay_btn .logo {
       width: 1.01rem;
       height: 0.76rem;
-      background-image: url("../imgs/11.png");
+      background-image: url("/Static/img/pay/11.png");
       background-size: contain; }
     .title .pay_btn .produce {
       align-self: flex-end; }

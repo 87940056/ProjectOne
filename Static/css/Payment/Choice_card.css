@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import url(../base.css);
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px;
+  background: #F5F5F5;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "苹方 粗体","微软雅黑",sans-serif; }
+
+.inner {
+  width: 92%;
+  margin: 0 auto; }
+
+body {
+  background: #F5F5F5; }
+
+.user_bg {
+  height: 4.84rem;
+  background-image: url("/Static/img/pay/12.png");
+  background-size: contain; }
+  .user_bg .title {
+    width: 100%;
+    height: 0.88rem; }
+    .user_bg .title .title_inner {
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center; }
+      .user_bg .title .title_inner .title_back {
+        display: inline-block;
+        width: 0.44rem;
+        height: 0.44rem;
+        background-image: url("/Static/img/pay/2.png");
+        background-size: cover; }
+      .user_bg .title .title_inner .title_title {
+        margin: 0 auto;
+        color: #fff;
+        display: flex;
+        flex-direction: column; }
+      .user_bg .title .title_inner .title_right {
+        height: 0.44rem; }
+        .user_bg .title .title_inner .title_right .title_btn {
+          display: block;
+          width: 0.78rem;
+          height: 0.46rem;
+          background: #33404D;
+          border: 1px solid #fff;
+          border-radius: 0.2rem;
+          text-align: center;
+          color: #fff; }
+  .user_bg .user_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .user_bg .user_info .photo {
+      width: 1.65rem;
+      height: 1.65rem;
+      background-image: url("/Static/img/pay/13.png");
+      background-size: contain; }
+    .user_bg .user_info h5 {
+      color: #fff;
+      margin-top: 0.24rem; }
+    .user_bg .user_info h6 {
+      color: #fff;
+      font-weight: normal; }
+
+.content .carousel {
+  margin-top: -0.86rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 3.27rem; }
+  .content .carousel .carousel_pic {
+    display: flex;
+    margin-left: -4.76rem;
+    overflow: hidden; }
+    .content .carousel .carousel_pic li {
+      width: 4.76rem;
+      height: 2.82rem;
+      background: #0ff;
+      flex-shrink: 0;
+      margin-left: 0.64rem;
+      border-radius: 0.1rem; }
+    .content .carousel .carousel_pic li:nth-child(2) {
+      background-image: url("/Static/img/pay/16.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+
+.content .carousel_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .content .carousel_btn li {
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    background: #B1B1B1;
+    margin-left: 0.05rem; }
+
+.content .card_info {
+  margin-top: 0.35rem;
+  padding: 0 0.67rem; }
+  .content .card_info li {
+    height: 1.05rem;
+    border-bottom: 1px dashed #DCDBDB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .content .card_info li .bank_number {
+      display: flex;
+      align-items: center; }
+      .content .card_info li .bank_number .circle {
+        width: 0.08rem;
+        height: 0.08rem;
+        background: #3AA5FF;
+        border-radius: 50%;
+        margin-left: -0.1rem;
+        margin-left: -0.2rem;
+        margin-right: 0.1rem; }
+      .content .card_info li .bank_number h4 {
+        width: 1.24rem;
+        font-size: 0.28rem;
+        font-weight: normal;
+        letter-spacing: 0.03rem; }
+      .content .card_info li .bank_number p {
+        font-size: 0.24rem;
+        margin-left: 0.24rem;
+        font-weight: bold;
+        color: #707070; }
+    .content .card_info li .translate p {
+      font-size: 0.2rem;
+      color: #AAAAAA; }
+  .content .card_info li:nth-child(2) .circle {
+    background: #FFB73A; }
+  .content .card_info li:nth-child(3) {
+    border-bottom: 0px; }
+    .content .card_info li:nth-child(3) .circle {
+      background: #1CC120; }
+
+.content .pay_btn {
+  width: 6.24rem;
+  height: 0.87rem;
+  background: #1F93E4;
+  border-radius: 0.1rem;
+  margin: 0.8rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .content .pay_btn .logo {
+    width: 1.01rem;
+    height: 0.76rem;
+    background-image: url("/Static/img/pay/14.png");
+    background-size: 0.44rem 0.5rem;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .content .pay_btn .produce p:nth-child(1) {
+    font-size: 0.26rem;
+    color: #fff; }
+  .content .pay_btn .produce p:nth-child(2) {
+    font-size: 0.2rem;
+    color: #fff; }
