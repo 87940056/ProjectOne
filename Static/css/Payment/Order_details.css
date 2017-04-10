@@ -1,0 +1,267 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body, p, pre, form, input, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px; }
+
+* {
+  box-sizing: border-box; }
+
+.inner {
+  width: 92%;
+  margin: 0 auto; }
+
+ul, li, ol, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #666666; }
+
+img {
+  border: 0; }
+
+input {
+  border: 0; }
+
+.title {
+  width: 100%;
+  height: 3.42rem;
+  background: #1CC120; }
+  .title .title_inner {
+    height: 0.88rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; }
+    .title .title_inner .title_back {
+      display: inline-block;
+      width: 0.44rem;
+      height: 0.44rem;
+      background-image: url("../imgs/2.png");
+      background-size: cover; }
+    .title .title_inner .title_title {
+      margin: 0 auto;
+      color: #fff;
+      display: flex;
+      flex-direction: column; }
+      .title .title_inner .title_title h5 {
+        font-size: 0.28rem;
+        font-weight: normal;
+        text-align: center; }
+      .title .title_inner .title_title span {
+        font-size: 0.2rem; }
+    .title .title_inner .title_right {
+      width: 0.44rem;
+      height: 0.44rem; }
+  .title .order_list {
+    width: 6.24rem;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: #999 0px 0px 5px;
+    margin: 0 auto;
+    border-radius: 0.1rem;
+    margin-top: 0.35rem;
+    padding: 0.3rem 0.22rem; }
+    .title .order_list li {
+      height: 50%; }
+      .title .order_list li .list_number {
+        font-size: 0.24rem;
+        color: #A3A2A2; }
+      .title .order_list li .Car_info {
+        height: 1.55rem;
+        margin-top: 0.2rem;
+        display: flex; }
+        .title .order_list li .Car_info .left {
+          width: 1.6rem;
+          height: 100%;
+          background-image: url("../imgs/6.png");
+          background-size: contain;
+          background-repeat: no-repeat; }
+        .title .order_list li .Car_info .right {
+          flex: 1;
+          padding-left: 0.2rem; }
+          .title .order_list li .Car_info .right h3 {
+            font-size: 0.3rem;
+            color: #535353; }
+          .title .order_list li .Car_info .right i {
+            display: block;
+            width: 0.53rem;
+            height: 0.04rem;
+            background-image: url("../imgs/7.png");
+            background-size: contain;
+            margin: 0.05rem 0; }
+          .title .order_list li .Car_info .right p {
+            font-size: 0.24rem;
+            color: #A3A2A2; }
+          .title .order_list li .Car_info .right h4 {
+            font-size: 0.3rem;
+            color: #FF1652; }
+  .title .order_details {
+    width: 6.24rem;
+    margin: 0.8rem auto 0;
+    display: flex; }
+    .title .order_details .left {
+      width: 0.22rem;
+      height: 2.61rem;
+      background-image: url("../imgs/17.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .title .order_details .right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .title .order_details .right li {
+        display: flex;
+        justify-content: space-between; }
+        .title .order_details .right li .method {
+          margin-left: 0.26rem; }
+          .title .order_details .right li .method h4 {
+            font-size: 0.24rem;
+            color: #7B7B7B; }
+          .title .order_details .right li .method h5 {
+            font-size: 0.2rem;
+            color: #A4A4A5;
+            font-weight: normal; }
+        .title .order_details .right li .info {
+          display: flex;
+          align-items: center; }
+          .title .order_details .right li .info p {
+            font-size: 0.2rem;
+            color: #666666; }
+      .title .order_details .right li:nth-child(2) .info p {
+        width: 1.49rem;
+        height: 0.57rem;
+        border: 2px solid #BCBCBC;
+        border-radius: 0.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FF212C;
+        font-size: 0.2rem; }
+  .title .pay {
+    width: 6.24rem;
+    margin: 0.5rem auto 0;
+    text-align: center; }
+    .title .pay .pay_title {
+      text-align: center;
+      display: flex;
+      justify-content: center; }
+      .title .pay .pay_title .logo {
+        display: inline-block;
+        width: 0.8rem;
+        height: 0.65rem;
+        background-image: url("../imgs/9.png");
+        background-size: contain; }
+      .title .pay .pay_title .introduce h5 {
+        font-size: 0.26rem;
+        color: #696666;
+        text-align: left; }
+      .title .pay .pay_title .introduce p {
+        font-size: 0.15rem;
+        color: #B0B0B1; }
+    .title .pay i {
+      display: block;
+      width: 6.05rem;
+      height: 0.05rem;
+      background-image: url("../imgs/8.png");
+      background-size: contain;
+      margin: 0.18rem 0; }
+    .title .pay .price {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .title .pay .price .discount p {
+        font-size: 0.26rem;
+        color: #696666; }
+      .title .pay .price .discount .logo {
+        width: 0.78rem;
+        height: 0.28rem;
+        background-image: url("../imgs/10.png");
+        background-size: cover; }
+      .title .pay .price h1 {
+        font-size: 0.96rem;
+        color: #FF7928;
+        font-weight: normal; }
+    .title .pay .total {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .title .pay .total .circle {
+        width: 0.08rem;
+        height: 0.08rem;
+        border-radius: 50%;
+        background: red;
+        margin: 0.02rem; }
+      .title .pay .total .circle:nth-child(1) {
+        background: #1F93E4; }
+      .title .pay .total .circle:nth-child(2) {
+        background: #53B323; }
+      .title .pay .total p {
+        font-size: 0.24rem;
+        letter-spacing: 0.01rem;
+        color: #9A9895; }
+      .title .pay .total a {
+        font-size: 0.24rem;
+        color: #FB3131; }
+      .title .pay .total p:nth-child(3) {
+        margin-left: 0.05rem; }
+      .title .pay .total p:nth-child(5) {
+        font-size: 0.23rem;
+        margin-left: 0.2rem; }
+      .title .pay .total p:nth-child(6) {
+        color: #FB3131; }
+  .title .pay_btn {
+    width: 6.24rem;
+    height: 0.87rem;
+    background: #1F93E4;
+    border-radius: 0.1rem;
+    margin: 0.8rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .title .pay_btn .logo {
+      width: 1.01rem;
+      height: 0.76rem;
+      background-image: url("../imgs/11.png");
+      background-size: contain; }
+    .title .pay_btn .produce {
+      align-self: flex-end; }
+      .title .pay_btn .produce p:nth-child(1) {
+        font-size: 0.26rem;
+        color: #fff; }
+      .title .pay_btn .produce p:nth-child(2) {
+        font-size: 0.2rem;
+        color: #fff; }
+
+.content {
+  height: auto;
+  background: none;
+  margin-top: -2.25rem; }
