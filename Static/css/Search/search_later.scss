@@ -1,0 +1,250 @@
+$padding:0 0.24rem;
+@import "../mixin.scss";
+@import url(../base.css);
+.container-fluid{
+  width:100%;
+  padding:$padding;
+  height:100%;
+}
+$IMG_PATH:"/Static/img/search/";
+//头部开始
+.header{
+  width:100%;
+  height:1.1rem;
+  background:#1CC120;
+  .nav{
+    width:100%;
+    height:0.88rem;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-between;
+    align-items:center;
+    .return a{
+      display:block;
+      width:0.44rem;
+      height:0.44rem;
+      span{
+        display:block;
+        width:100%;
+        height:100%;
+        background:url($IMG_PATH +"back.png") no-repeat center center;
+        background-size:cover;
+      }
+    }
+    .title{
+      display:flex;
+      display:-webkit-flex;
+      flex-wrap:wrap;
+      flex-direction:column;
+      color:#fff;
+      justify-content:center;
+      align-items:center;
+      h2{
+        font-size:14px;
+      }
+      span{
+        font-size:10px;
+        font-weight:normal;
+      }
+    }
+  }
+  .search{
+    width:100%;
+    height:0.8rem;
+    background:#fff;
+    border-radius:0.12rem;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-around;
+    align-items:center;
+    button{
+      flex:0 0 20%;
+      font-size:15px;
+      color:#FCC727;
+      background:none;
+      border:0;
+      display:flex;
+      display:-webkit-flex;
+      justify-content:space-around;
+      align-items:center;
+      outline:none;
+      span{
+        display:block;
+        border-radius:50%;
+        width:0.05rem;
+        height:0.05rem;
+        &:nth-child(1){
+          background:#1D4BE9;
+        }
+        &:nth-child(2){
+          background:#1CC120;
+        }
+      }
+    }
+    .s-xian{
+      height:86%;
+      border:1px dashed #D3D3D3;
+      margin:0.1rem 0;
+    }
+    .search-p{
+      flex:0 0 60%;
+      height:100%;
+      border:0;
+      padding:0.1rem;
+      outline:none;
+      color:#727272;
+    }
+    .vioce{
+      display:block;
+      width:0.24rem;
+      height:0.4rem;
+      span{
+        display:block;
+        width:100%;
+        height:100%;
+        background:url($IMG_PATH +"voice.png") no-repeat center center;
+        background-size:cover;
+      }
+    }
+  }
+}
+//sorry开始
+.sorry{
+  width:100%;
+  height:auto;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:0.9rem;
+  .images{
+    width:0.75rem;
+    height:1rem;
+    span{
+      display:block;
+      width:100%;
+      height:100%;
+      background:url($IMG_PATH +"logo2.png") no-repeat center center;
+      background-size:cover;
+    }
+  }
+  .title{
+    display:flex;
+    display:-webkit-flex;
+    flex-direction:column;
+    padding-left:0.1rem;
+    h2{
+      font-size:24px;
+      color:#FCC727;
+    }
+    span{
+      font-size:12px;
+      color:#999;
+    }
+  }
+}
+//相关推荐开始
+.history-title{
+  padding:0.3rem 0 0.24rem;
+  display:flex;
+  display:-webkit-flex;
+  .collect{
+    display:block;
+    width:0.54rem;
+    height:0.54rem;
+    background:url($IMG_PATH +"collect.png") no-repeat center center;
+    background-size:cover;
+    margin-right:0.1rem;
+    align-self:center;
+  }
+  h2{
+    display:flex;
+    display:-webkit-flex;
+    flex-direction:column;
+    font-size:14px;
+    color:#333;
+    span{
+      font-size:12px;
+      color:#666;
+      font-weight:normal;
+      code{
+        color:#1CC120;
+        font-weight:bold;
+      }
+    }
+  }
+}
+.correlation{
+  width:100%;
+  height:auto;
+  .correlation-list{
+    width:100%;
+    height:auto;
+    ul{
+      width:100%;
+      height:auto;
+      li{
+        width:100%;
+        height:2.92rem;
+        border-radius:8px;
+        overflow:hidden;
+        margin-bottom:0.12rem;
+      }
+      .recom{
+        width:100%;
+        height:100%;
+        padding-left:0.28rem;
+        background:url($IMG_PATH +"roc_1.jpg") no-repeat center center;
+        background-size:cover;
+        display:flex;
+        display:-webkit-flex;
+        flex-direction:column;
+        justify-content:space-around;
+        h2 a{
+          font-size:15px;
+          color:#fff;
+        }
+        .detail{
+          border-left:6px solid #FCC727;
+          padding-left:0.1rem;
+          p{
+            font-size:8px;;
+            color:#fff;
+            span{
+              padding:0 0.15rem;
+            }
+          }
+          span{
+            font-size:8px;;
+            color:#fff;
+            padding:0 0.15rem;
+          }
+        }
+        .from{
+          display:flex;
+          display:-webkit-flex;
+          .head{
+            display:block;
+            width:0.32rem;
+            height:0.32rem;
+            background:url($IMG_PATH +"heard.jpg") no-repeat top center;
+            background-size:cover;
+            border-radius:50%;
+          }
+          span{
+            font-size:8px;
+            color:#fff;
+          }
+        }
+      }
+      li:nth-child(2) .recom{
+        background:#1D4BE9 url($IMG_PATH +"roc_2.png") no-repeat center center;
+        background-size:cover;
+      }
+      li:nth-child(3) .recom{
+        background:url($IMG_PATH +"roc_3.jpg") no-repeat center center;
+        background-size:cover;
+      }
+    }
+  }
+}

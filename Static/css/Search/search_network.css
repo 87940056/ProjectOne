@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url(../base.css);
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px;
+  background: #F5F5F5;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "苹方 粗体","微软雅黑",sans-serif; }
+
+.container-fluid {
+  width: 100%;
+  padding: 0 0.24rem;
+  height: 100%; }
+
+.header {
+  width: 100%;
+  height: 1.1rem;
+  background: #1CC120; }
+  .header .nav {
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .nav .return a {
+      display: block;
+      width: 0.44rem;
+      height: 0.44rem; }
+      .header .nav .return a span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("/Static/img/search/back.png") no-repeat center center;
+        background-size: cover; }
+    .header .nav .title {
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      color: #fff;
+      justify-content: center;
+      align-items: center; }
+      .header .nav .title h2 {
+        font-size: 14px; }
+      .header .nav .title span {
+        font-size: 10px;
+        font-weight: normal; }
+  .header .search {
+    width: 100%;
+    height: 0.8rem;
+    background: #fff;
+    border-radius: 0.12rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center; }
+    .header .search button {
+      flex: 0 0 20%;
+      font-size: 15px;
+      color: #FCC727;
+      background: none;
+      border: 0;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-around;
+      align-items: center;
+      outline: none; }
+      .header .search button span {
+        display: block;
+        border-radius: 50%;
+        width: 0.05rem;
+        height: 0.05rem; }
+        .header .search button span:nth-child(1) {
+          background: #1D4BE9; }
+        .header .search button span:nth-child(2) {
+          background: #1CC120; }
+    .header .search .s-xian {
+      height: 86%;
+      border: 1px dashed #D3D3D3;
+      margin: 0.1rem 0; }
+    .header .search .search-p {
+      flex: 0 0 60%;
+      height: 100%;
+      border: 0;
+      padding: 0.1rem;
+      outline: none;
+      color: #727272; }
+    .header .search .vioce {
+      display: block;
+      width: 0.24rem;
+      height: 0.4rem; }
+      .header .search .vioce span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("/Static/img/search/voice.png") no-repeat center center;
+        background-size: cover; }
+
+.signal {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .signal .images {
+    width: 2rem;
+    height: 1.8rem; }
+    .signal .images span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url("/Static/img/search/signal.png") no-repeat center center;
+      background-size: cover; }
+  .signal h3 {
+    font-size: 15px;
+    color: #999;
+    font-weight: normal; }
+  .signal .btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    margin-top: 0.5rem; }
+    .signal .btn button {
+      background: none;
+      outline: none;
+      border: 1px solid #1CC120;
+      color: #1CC120;
+      padding: 0.2rem 0.4rem;
+      border-radius: 30px; }

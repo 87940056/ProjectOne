@@ -1,0 +1,153 @@
+$padding:0 0.24rem;
+@import "../mixin.scss";
+@import url(../base.css);
+.container-fluid{
+  width:100%;
+  padding:$padding;
+  height:100%;
+}
+$IMG_PATH:"/Static/img/search/";
+//头部开始
+.header{
+  width:100%;
+  height:1.1rem;
+  background:#1CC120;
+  .nav{
+    width:100%;
+    height:0.88rem;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-between;
+    align-items:center;
+    .return a{
+      display:block;
+      width:0.44rem;
+      height:0.44rem;
+      span{
+        display:block;
+        width:100%;
+        height:100%;
+        background:url($IMG_PATH +"back.png") no-repeat center center;
+        background-size:cover;
+      }
+    }
+    .title{
+      display:flex;
+      display:-webkit-flex;
+      flex-wrap:wrap;
+      flex-direction:column;
+      color:#fff;
+      justify-content:center;
+      align-items:center;
+      h2{
+        font-size:14px;
+      }
+      span{
+        font-size:10px;
+        font-weight:normal;
+      }
+    }
+  }
+  .search{
+    width:100%;
+    height:0.8rem;
+    background:#fff;
+    border-radius:0.12rem;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-around;
+    align-items:center;
+    button{
+      flex:0 0 20%;
+      font-size:15px;
+      color:#FCC727;
+      background:none;
+      border:0;
+      display:flex;
+      display:-webkit-flex;
+      justify-content:space-around;
+      align-items:center;
+      outline:none;
+      span{
+        display:block;
+        border-radius:50%;
+        width:0.05rem;
+        height:0.05rem;
+        &:nth-child(1){
+          background:#1D4BE9;
+        }
+        &:nth-child(2){
+          background:#1CC120;
+        }
+      }
+    }
+    .s-xian{
+      height:86%;
+      border:1px dashed #D3D3D3;
+      margin:0.1rem 0;
+    }
+    .search-p{
+      flex:0 0 60%;
+      height:100%;
+      border:0;
+      padding:0.1rem;
+      outline:none;
+      color:#727272;
+    }
+    .vioce{
+      display:block;
+      width:0.24rem;
+      height:0.4rem;
+      span{
+        display:block;
+        width:100%;
+        height:100%;
+        background:url($IMG_PATH +"voice.png") no-repeat center center;
+        background-size:cover;
+      }
+    }
+  }
+}
+
+//无信号开始
+.signal{
+  width:100%;
+  height:80vh;
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  .images{
+    width:2rem;
+    height:1.8rem;
+    span{
+      display:block;
+      width:100%;
+      height:100%;
+      background:url($IMG_PATH +"signal.png") no-repeat center center;
+      background-size:cover;
+    }
+  }
+  h3{
+    font-size:15px;
+    color:#999;
+    font-weight:normal;
+  }
+  .btn{
+    width:100%;
+    height:auto;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:center;
+    margin-top:0.5rem;
+    button{
+      background:none;
+      outline:none;
+      border:1px solid #1CC120;
+      color:#1CC120;
+      padding:0.2rem 0.4rem;
+      border-radius:30px;
+    }
+  }
+}

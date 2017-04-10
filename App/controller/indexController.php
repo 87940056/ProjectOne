@@ -19,8 +19,14 @@ class indexController extends frameWork{
     function search(){
         $this->display('default/Search/Search');
     }
-    function pay(){
-        $this->display('default/Payment/OrderDetails');
+    function search_in(){
+        $this->display('default/Search/search_in');
+    }
+    function search_loser(){
+        $this->display('default/Search/search_loser');
+    }
+    function search_network(){
+        $this->display('default/Search/search_network');
     }
     function Choice_card(){
         $this->display('default/Payment/Choice_card');
