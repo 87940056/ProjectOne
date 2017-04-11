@@ -1,0 +1,195 @@
+@import "../mixin";
+@import url('../base.css');
+/*
+ body{
+    background: url(../img/15.png) no-repeat center center/100% 100%; 
+}
+*/
+//签名
+
+$img: '/Static/img/personal/';
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 93.6%;
+    height: 0.88rem;
+    margin: 0 auto;
+    .nav_box{
+        width: 0.47rem;
+        height: 0.47rem;
+        background: pink;
+    }
+    .situer{
+        background: url($img +'situer.gif') no-repeat center/0.47rem;
+    }
+    .jour{
+        background: url($img +'aa11.gif') no-repeat center;
+        background-size: 0.73rem 0.67rem;
+    }
+}
+//头像 修改签名
+.header_con{
+    display: flex;
+    align-items: flex-end;
+    width: 93.6%;
+    height: 2.97rem;
+    margin: 0 auto;
+    .con_box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:85.59%;
+        height: 2.01rem;
+        margin: 0 auto;
+    }
+    .write{
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius:50%;
+        background: url($img +'write.gif') no-repeat center/0.6rem;
+    }
+    .header{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: url($img +'header.gif') no-repeat center/2rem;
+    }
+    .setting{
+        width: 0.6rem;
+        height:0.6rem;
+        border-radius: 50%;
+        background: url($img +'setting.gif') no-repeat center/0.6rem;
+    }
+}
+//星级
+.star_box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 67.6%;
+    height: 0.47rem;
+    margin: 0 auto;
+    .star{
+            width: 0.24rem;
+            height:0.24rem;
+            background: url($img +'star.gif') no-repeat center/0.22rem;
+    }
+}
+
+//签名
+.singer_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 67.6%;
+    height: 1.66rem;
+    margin: 0 auto;
+    .name_zh{
+        font-size:0.3rem;
+    }
+    .name_us{
+        font-size:0.24rem;
+    }
+    .singer{
+        font-size:0.22rem;
+    }
+}
+//粉丝和关注
+.attenfans{
+    display: flex;
+    justify-content: space-between;
+    width: 93.6%;
+    height:1.8rem;
+    .myatten_bg{
+        width: 3.37rem;
+        height: 1.44rem;
+        border-radius: 0.05rem;
+        background: url($img +'atten.gif') no-repeat center/3.37rem 1.44rem;
+    }
+    .myfans_bg{
+        width: 3.37rem;
+        height: 1.44rem;
+        border-radius: 0.05rem;
+        background: url($img +'fansbg.gif') no-repeat center/3.37rem 1.44rem;
+    }
+}
+//功能
+.faculte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 93.6%;
+    height: 4.54rem;
+    margin: 0 auto;
+//  background: pink;
+    .facultebox{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 0.83rem;
+//  background: pink;
+        
+        .facultebox_left{
+            width: 3.37rem;
+            height: 100%;
+            .icons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 0.93rem;
+                height: 100%;
+//              background: blueviolet;
+                .cir{
+                    width: 0.58rem;
+                    height: 0.58rem;
+                    border-radius: 50%;
+                }
+                .news_cir{
+                    background: url($img +'news.gif') no-repeat center/0.58rem;
+                }
+                .oeder_cir{
+                    background: url($img +'oeder.gif') no-repeat center/0.58rem;
+                }
+                .wallet_cir{
+                    background: url($img +'wallet.gif') no-repeat center/0.58rem;
+                }
+                .privilege_cir{
+                    background: url($img +'privilege.gif') no-repeat center/0.58rem;
+                }
+                .volunteer_cir{
+                    background: url($img +'volunteer.gif') no-repeat center/0.58rem;
+                }
+            }
+            .fonts{
+                width: 2.44rem;
+                height: 100%;
+            }
+        }
+        .facultebox_right{
+            width: 3.37rem;
+            height: 100%;
+            .btn_box{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 3.15rem;
+                height: 100%;
+//  background: pink;
+                .news_btn{
+                    width: 0.72rem;
+                    height: 0.42rem;
+                    border-radius: 0.3rem;
+                    background: #ff3469;
+                }
+                .btns{
+                    width: 0.38rem;
+                    height: 0.38rem;
+                    border-radius: 50%;
+                    background: url($img +'btns.gif') no-repeat center/0.38rem;
+                }
+            }
+        }
+    }
+}

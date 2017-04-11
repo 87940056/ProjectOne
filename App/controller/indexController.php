@@ -19,6 +19,15 @@ class indexController extends frameWork{
     function personal(){
         $this->display('default/Personal/Personal');
     }
+    function fun_list(){
+        $this->display('default/Personal/FunList');
+    }
+    function fun_detail(){
+        $this->display('default/Personal/FunDetail');
+    }
+    function chat(){
+        $this->display('default/Personal/Chat');
+    }
     function search(){
         $this->display('default/Search/Search');
     }
