@@ -1,5 +1,6 @@
 <?php
 namespace App\controller;
+use App\model\musicModel;
 use Core\dbPdo;
 use Core\frameWork;
 class indexController extends frameWork{
@@ -8,6 +9,9 @@ class indexController extends frameWork{
     }
     function log(){
         $this->display('default/Log/Log');
+    }
+    function loglist(){
+        $this->display('default/Log/LogList');
     }
     function log_detail(){
         $this->display('default/Log/LogDetail');
@@ -28,14 +32,12 @@ class indexController extends frameWork{
         $this->display('default/Personal/Chat');
     }
     function search(){
-
         $this->display('default/Search/Search');
     }
     function search_in(){
         $this->display('default/Search/search_in');
     }
     function search_loser(){
-
         $this->display('default/Search/search_loser');
     }
     function search_network(){
@@ -52,5 +54,9 @@ class indexController extends frameWork{
     }
     function password(){
         $this->display('default/Payment/password');
+    }
+
+    function screen1(){
+        $this->display('default/Log/screen1');
     }
 }
