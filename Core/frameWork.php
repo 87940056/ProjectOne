@@ -1,6 +1,6 @@
 <?php
 namespace Core;
-class framework{
+class frameWork{
     public $arr;
     public function session($k,$v){
         session_start();

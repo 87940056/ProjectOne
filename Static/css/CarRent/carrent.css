@@ -26,27 +26,6 @@ body {
   -webkit-tap-highlight-color: transparent;
   font-family: "苹方 粗体","微软雅黑",sans-serif; }
 
-header {
-  width: 100%;
-  height: 0.88rem;
-  background-color: #1CC120;
-  padding: 0 0.24rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  header .location {
-    width: 0.44rem;
-    height: 0.44rem;
-    background: url("/Static/img/home/location.png") no-repeat center/100% 100%; }
-  header .title {
-    width: 1.47rem;
-    height: 100%;
-    background: url("/Static/img/home/title.png") no-repeat center/100% auto; }
-  header .setting {
-    width: 0.44rem;
-    height: 0.44rem;
-    background: url("/Static/img/home/setting.png") no-repeat center/100% 100%; }
-
 .content {
   width: 100%;
   padding: 0 0.24rem;
@@ -262,91 +241,11 @@ header {
       font-size: .18rem;
       color: #999999; }
 
-footer {
-  width: 100%;
-  height: 0.98rem;
-  position: fixed;
-  bottom: 0;
-  z-index: 10; }
-  footer .bacPoint {
-    width: 1.1rem;
-    height: 0.14rem;
-    position: absolute;
-    top: -0.07rem;
-    right: 1.55rem;
-    display: flex;
-    justify-content: space-between; }
-    footer .bacPoint .point {
-      width: 0.14rem;
-      height: 0.14rem;
-      border-radius: 50%;
-      background-color: #117213; }
-  footer ul {
-    width: 100%;
-    height: 100%;
-    background-color: #2F2F2F;
-    position: relative;
-    display: flex;
-    justify-content: space-between; }
-  footer li {
-    width: 0.56rem;
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    footer li .img {
-      width: 100%;
-      height: 0.56rem;
-      border-radius: 50%;
-      position: relative; }
-    footer li p {
-      width: 100%;
-      font-size: 0.2rem;
-      color: #fff;
-      text-align: center;
-      position: relative; }
-    footer li .div_008 {
-      width: 1rem;
-      height: 1.14rem;
-      background: url("/Static/img/home/008.png") no-repeat center/100% 100%;
-      position: absolute;
-      top: -0.1rem;
-      left: -0.22rem; }
-    footer li a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 5; }
-  footer li:nth-child(1) .img {
-    background: url("/Static/img/home/footer01.png") no-repeat center/100% 100%; }
-  footer li:nth-child(2) .img {
-    background: url("/Static/img/home/footer02.png") no-repeat center/100% 100%; }
-  footer li:nth-child(3) .img {
-    background: url("/Static/img/home/footer03.png") no-repeat center/100% 100%; }
-  footer li:nth-child(4) .img {
-    background: url("/Static/img/home/footer04.png") no-repeat center/100% 100%; }
-  footer li:nth-child(1) {
-    margin-left: 0.5rem; }
-  footer li:nth-child(2) {
-    margin-right: 1rem; }
-  footer li:nth-child(3) {
-    margin-left: 1rem; }
-  footer li:nth-child(4) {
-    margin-right: 0.5rem; }
-    footer li:nth-child(4) .img {
-      background: url("/Static/img/home/footer04.png") no-repeat center/120% 100%; }
-  footer .add {
-    width: 1.16rem;
-    height: 1.16rem;
-    border-radius: 50%;
-    background: #fff url("/Static/img/home/add.png") no-repeat center/1.01rem 1.01rem;
-    box-shadow: 0 0 0.05rem #76A276;
-    position: absolute;
-    top: -0.58rem;
-    left: 0;
-    right: 0;
-    margin: auto; }
+footer .bacPoint {
+  width: 1.1rem;
+  height: 0.14rem;
+  position: absolute;
+  top: -0.07rem;
+  right: 1.55rem;
+  display: flex;
+  justify-content: space-between; }

@@ -1,7 +1,6 @@
 <?php
 namespace App\controller;
 use App\model\musicModel;
-use Core\dbPdo;
 use Core\frameWork;
 class registerController extends frameWork
 {
