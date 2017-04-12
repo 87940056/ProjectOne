@@ -249,6 +249,11 @@ body {
       overflow: hidden;
       box-shadow: 0 0.02rem 0.1rem #DADADA;
       margin-bottom: 0.22rem; }
+      .guess-like .like-list ul li .zhe {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%; }
       .guess-like .like-list ul li:before {
         position: absolute;
         content: '';

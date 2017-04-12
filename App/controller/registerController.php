@@ -1,11 +1,11 @@
 <?php
 namespace App\controller;
-use Core\framework;
-
-class registerController extends framework{
-
-    function index()
-    {
-        $this->display('admin/Register/Register');
+use App\model\musicModel;
+use Core\dbPdo;
+use Core\frameWork;
+class registerController extends frameWork
+{
+    function index(){
+        $this->display('admin/Register/message');
     }
 }

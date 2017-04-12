@@ -1,0 +1,205 @@
+@import "../mixin";
+$img:"/Static/img";
+body{
+  background: url($img + "/register/mes_background.jpg") no-repeat top;
+  background-size: cover;
+}
+.tops{
+  padding: 0 0.24rem;
+}
+.header{
+  width:100%;
+  height:0.9rem;
+  /*background: red;*/
+  //margin-bottom: 1.14rem;
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  .header-left{
+    width:0.44rem;
+    height:0.44rem;
+    background: url($img +"/register/register_03.png") no-repeat;
+    background-size: cover;
+  }
+  .header-right{
+    width:0.98rem;
+    height:0.42rem;
+    border-radius: 0.21rem;
+    border:0.02rem solid #1CC120;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .header-right a{
+    font-size: 0.24rem;
+    color:#1CC120;
+    -webkit-line-clamp:1;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    text-overflow:ellipsis;
+    overflow:hidden;
+  }
+}
+.basic_message{
+  width: 100%;
+  height: 1.9rem;
+  //background: red;
+  position: absolute;
+  left: 0;
+  top: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+  .numberone{
+    width: 100%;
+    height: 0.98rem;
+    display: flex;
+    justify-content: center;
+    .circle{
+      width: 0.98rem;
+      height: 0.98rem;
+      border-radius: 50%;
+      border: 0.03rem solid #ffff00;
+      text-align: center;
+      line-height: 0.98rem;
+      font-size: 0.45rem;
+      font-weight: bold;
+      background: #fff;
+      opacity: 0.8;
+    }
+  }
+  .span1{
+    font-size: 0.3rem;
+    letter-spacing: 0.04rem;
+    font-weight:bolder;
+    font-family:'黑体';
+  }
+  .span2{
+    font-size: 0.15rem;
+  }
+
+}
+.hezi{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top:7.0rem ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .user{
+    width: 6.3rem;
+    height: 0.74rem;
+    margin-bottom: 0.2rem;
+    border-bottom: 0.02rem solid #c9c9c9;
+    .pic{
+      width: 0.66rem;
+      height: 100%;
+      background:url($img + "/register/user.png") no-repeat;
+      float: left;
+    }
+    input{
+      float: left;
+      width: 5.64rem;
+      height: 0.7rem;
+      border: none;
+      outline: none;
+      font-size: 0.22rem;
+      letter-spacing: 0.05rem;
+    }
+  }
+  .phone{
+    width: 6.3rem;
+    height: 0.74rem;
+    margin-bottom: 0.2rem;
+    border-bottom: 0.02rem solid #c9c9c9;
+    .pic{
+      width: 0.66rem;
+      height: 100%;
+      background:url($img + "/register/phone.png") no-repeat;
+      float: left;
+    }
+    input{
+      float: left;
+      width: 5.64rem;
+      height: 0.7rem;
+      border: none;
+      outline: none;
+      font-size: 0.22rem;
+      letter-spacing: 0.05rem;
+    }
+  }
+  .password{
+    width: 6.3rem;
+    height: 0.74rem;
+    //background: blue;
+    margin-bottom: 0.2rem;
+    border-bottom: 0.02rem solid #c9c9c9;
+    .pic{
+      width: 0.66rem;
+      height: 100%;
+      background:url($img + "/register/loak.png") no-repeat;
+      float: left;
+    }
+    input{
+      float: left;
+      width: 4.64rem;
+      height: 0.7rem;
+      border: none;
+      outline: none;
+      font-size: 0.22rem;
+      letter-spacing: 0.05rem;
+    }
+    .kay{
+      width: 1rem;
+      height: 100%;
+      background:url($img + "/register/kay.png") no-repeat left center;
+      float: right;
+    }
+  }
+  .passwordagin{
+    width: 6.3rem;
+    height: 0.74rem;
+    margin-bottom: 0.2rem;
+    border-bottom: 0.02rem solid #c9c9c9;
+    .pic{
+      width: 0.66rem;
+      height: 100%;
+      background:url($img + "/register/loak.png") no-repeat;
+      float: left;
+    }
+    input{
+      float: left;
+      width: 5.64rem;
+      height: 0.7rem;
+      border: none;
+      outline: none;
+      font-size: 0.22rem;
+      letter-spacing: 0.05rem;
+    }
+  }
+  .member{
+    width: 3.74rem;
+    height: 1.06rem;
+    background: #303035;
+    margin-top: 0.4rem;
+    border-radius:0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    span{
+      color: #fff;
+      &:nth-child(1){
+        font-size: 0.32rem;
+      }
+      &:nth-child(2){
+        font-size: 0.12rem;
+      }
+    }
+  }
+}
+
+
