@@ -26,7 +26,7 @@ body {
   font-family: "苹方 粗体","微软雅黑",sans-serif; }
 
 body {
-  background: url("/Static/img/register/mes_background.png") no-repeat top;
+  background: #F5F5F5 url("/Static/img/register/mes_background.png") no-repeat top;
   background-size: cover; }
 
 .tops {
@@ -35,14 +35,13 @@ body {
 .header {
   width: 100%;
   height: 0.9rem;
-  /*background: red;*/
   display: flex;
   align-items: center;
   justify-content: space-between; }
   .header .header-left {
     width: 0.44rem;
     height: 0.44rem;
-    background: url("/Static/img/register/register_03.png") no-repeat;
+    background: url("/Static/img/register/register_03.png") no-repeat center;
     background-size: cover; }
   .header .header-right {
     width: 0.98rem;
@@ -90,8 +89,7 @@ body {
   .basic_message .span1 {
     font-size: 0.3rem;
     letter-spacing: 0.04rem;
-    font-weight: bolder;
-    font-family: '黑体'; }
+    font-weight: bolder; }
   .basic_message .span2 {
     font-size: 0.15rem; }
 
@@ -113,6 +111,8 @@ body {
       width: 0.66rem;
       height: 100%;
       background: url("/Static/img/register/user.png") no-repeat;
+      background-position: center;
+      background-size: cover;
       float: left; }
     .hezi .user input {
       float: left;
@@ -131,6 +131,8 @@ body {
       width: 0.66rem;
       height: 100%;
       background: url("/Static/img/register/phone.png") no-repeat;
+      background-position: center;
+      background-size: cover;
       float: left; }
     .hezi .phone input {
       float: left;
@@ -149,6 +151,8 @@ body {
       width: 0.66rem;
       height: 100%;
       background: url("/Static/img/register/loak.png") no-repeat;
+      background-position: center;
+      background-size: cover;
       float: left; }
     .hezi .password input {
       float: left;
@@ -162,6 +166,8 @@ body {
       width: 1rem;
       height: 100%;
       background: url("/Static/img/register/kay.png") no-repeat left center;
+      background-position: center;
+      background-size: cover;
       float: right; }
   .hezi .passwordagin {
     width: 6.3rem;
@@ -172,6 +178,8 @@ body {
       width: 0.66rem;
       height: 100%;
       background: url("/Static/img/register/loak.png") no-repeat;
+      background-position: center;
+      background-size: cover;
       float: left; }
     .hezi .passwordagin input {
       float: left;

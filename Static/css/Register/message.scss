@@ -1,7 +1,7 @@
 @import "../mixin";
 $img:"/Static/img";
 body{
-  background: url($img + "/register/mes_background.png") no-repeat top;
+  background:#F5F5F5 url($img + "/register/mes_background.png") no-repeat top;
   background-size: cover;
 }
 .tops{
@@ -10,15 +10,13 @@ body{
 .header{
   width:100%;
   height:0.9rem;
-  /*background: red;*/
-  //margin-bottom: 1.14rem;
   display: flex;
   align-items:center;
   justify-content:space-between;
   .header-left{
     width:0.44rem;
     height:0.44rem;
-    background: url($img +"/register/register_03.png") no-repeat;
+    background: url($img +"/register/register_03.png") no-repeat center;
     background-size: cover;
   }
   .header-right{
@@ -43,7 +41,6 @@ body{
 .basic_message{
   width: 100%;
   height: 1.9rem;
-  //background: red;
   position: absolute;
   left: 0;
   top: 4.8rem;
@@ -73,7 +70,6 @@ body{
     font-size: 0.3rem;
     letter-spacing: 0.04rem;
     font-weight:bolder;
-    font-family:'黑体';
   }
   .span2{
     font-size: 0.15rem;
@@ -98,6 +94,8 @@ body{
       width: 0.66rem;
       height: 100%;
       background:url($img + "/register/user.png") no-repeat;
+      background-position:center;
+      background-size:cover;
       float: left;
     }
     input{
@@ -119,6 +117,8 @@ body{
       width: 0.66rem;
       height: 100%;
       background:url($img + "/register/phone.png") no-repeat;
+      background-position:center;
+      background-size:cover;
       float: left;
     }
     input{
@@ -141,6 +141,8 @@ body{
       width: 0.66rem;
       height: 100%;
       background:url($img + "/register/loak.png") no-repeat;
+      background-position:center;
+      background-size:cover;
       float: left;
     }
     input{
@@ -156,6 +158,8 @@ body{
       width: 1rem;
       height: 100%;
       background:url($img + "/register/kay.png") no-repeat left center;
+      background-position:center;
+      background-size:cover;
       float: right;
     }
   }
@@ -168,6 +172,8 @@ body{
       width: 0.66rem;
       height: 100%;
       background:url($img + "/register/loak.png") no-repeat;
+      background-position:center;
+      background-size:cover;
       float: left;
     }
     input{
