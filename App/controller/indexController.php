@@ -52,4 +52,8 @@ class indexController extends frameWork{
     function password(){
         $this->display('default/Payment/password');
     }
+
+    function screen1(){
+        $this->display('default/Log/screen1');
+    }
 }
