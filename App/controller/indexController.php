@@ -56,7 +56,5 @@ class indexController extends frameWork{
         $this->display('default/Payment/password');
     }
 
-    function screen1(){
-        $this->display('default/Log/screen1');
-    }
+
 }
