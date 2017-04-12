@@ -1,6 +1,6 @@
-@import '../mixin.scss';
+@import 'mixin.css';
 @import url(../base.css);
-
+$IMG_PATH: '/Static/img/login';
 body{
 	background: #f5f5f5;
 	overflow: hidden;
@@ -24,7 +24,7 @@ html{
 	.header-left{
 		width:0.44rem;
 		height:0.44rem;
-		background: url(../login/denglu_03.png) no-repeat;
+		background: url($IMG_PATH+'/denglu_03.png') no-repeat;
 		background-size: cover;
 	}
 	.header-right{
@@ -61,7 +61,7 @@ html{
 		height:1.58rem;
 		border:0.02rem solid #ffffff;
 		border-radius: 50%;
-		background: url(../images/logo.png) no-repeat;
+		background: url($IMG_PATH+'/logo.png') no-repeat;
 		background-position: center center;
 		background-size: cover;
 		position: absolute;
@@ -70,6 +70,13 @@ html{
 		margin-left: -0.79rem;
 		box-shadow:0px 0.1rem 0.1rem #ececec;
 	}
+/*	.error{
+		font-size: 0.24rem;
+		color:#F43145;
+		position: absolute;
+		top:0.54rem;
+		right:0.58rem;
+	}*/
 	.name-box{
 		width:100%;
 		height:0.7rem;
@@ -77,36 +84,45 @@ html{
 		border-radius: 3px;
 		margin-bottom: 0.35rem;
 		display: flex;
+		align-items:center;
 		justify-content:space-between;
 		.name-lefts{
 			width:0.77rem;
 			height:0.7rem;
-			background: url(../images/01e522a3.png) no-repeat;
+			background: url($IMG_PATH+'/01e522a3.png') no-repeat;
 			background-position: center center;
 			background-size: 0.48rem 0.42rem;
 		}
 		.name-input{
+			width:2.3rem;
 			height:0.7rem;
 			border:none;
 			outline: none;
 			flex:1;
-			padding-left: 0.1rem;
-			
+			padding-left: 0.1rem;	
+		}
+		.rounds-box{
+			width:0.22rem;
+			height:0.22rem;
+			background: url($IMG_PATH+'/2017-04-09_180916.png')no-repeat;
+			background-size: cover;
+			margin-right: 0.15rem;
 		}
 	}
 	.password-box{
-		width:100%;
+		width:3.77rem;
 		height:0.7rem;
 		box-shadow:0px 0px 0.15rem #ececec;
 		border-radius: 3px;
 		margin-bottom: 0.35rem;
+		position: relative;
 		display: flex;
 		justify-content:space-between;
 		align-items:center;
 		.password-lefts{
 			width:0.77rem;
 			height:0.7rem;
-			background: url(../images/41.png) no-repeat;
+			background: url($IMG_PATH+'/41.png') no-repeat;
 			background-position: center center;
 			background-size: cover;
 		}
@@ -118,13 +134,60 @@ html{
 			flex:1;
 			
 		}
-		.password-right{
-			width:0.92rem;
-			height:0.2rem;
-			background: url(../images/yanjing.png) no-repeat;
-			background-position: left center;
-			background-size: 0.44rem 0.2rem;
+		/*.dians{
+			width:auto;
+			height:auto;
+			position: absolute;
+			left:1.5rem;
+			display: flex;
+			justify-content:space-around;
+			align-items:center;
 		}
+		.dians li{
+			width:0.09rem;
+			height:0.09rem;
+			background: #757575;
+			margin-right: 0.1rem;
+			border-radius: 50%;
+		}*/
+		.password-right{
+			width:1.9rem;
+			height:0.7rem;
+			/*background: url($IMG_PATH+'/yanjing.png) no-repeat;
+			background-position: left center;
+			background-size: 0.44rem 0.2rem;*/
+			background: #ECECEC;
+			box-shadow:0px 0px 0.15rem #ececec;
+			border-radius: 3px;
+			position: absolute;
+			text-align: center;
+			line-height: 0.7rem;
+			padding:0px 0.36rem;
+			right:-2.1rem;
+			display: flex;
+			justify-content:space-around;
+			align-items:center;
+		}
+		.password-right .red{
+			width:0.1rem;
+			height:0.1rem;
+			background: url($IMG_PATH+'/2017-04-10_215648.png');
+			background-size: cover;
+			/*border-radius: 50%;*/
+		}
+		.password-right span{
+			font-size: 0.24rem;
+			margin:0px 0.2rem;
+			color:#808790;
+		}
+		/*.password-right .rounds{
+			width:0.22rem;
+			height:0.22rem;
+			background: url($IMG_PATH+'/2017-04-09_163117.png)no-repeat;
+			background-size: cover;
+			float: right;
+			margin-right: 0.15rem;
+		}*/
 	}
 
 	.remember{
@@ -177,7 +240,7 @@ html{
 		margin-bottom: 0.9rem;
 		margin:0 auto;
 		display: flex;
-		flex-direction:column;
+		/*flex-direction:column;*/
 		justify-content:center;
 		align-items:center;
 		position: relative;
@@ -185,31 +248,43 @@ html{
 	.button .photo{
 		width:1.12rem;
 		height:1.23rem;
-		background: url(../images/4addb043421171.png) no-repeat;
+		background: url($IMG_PATH+'/4addb043421171.png') no-repeat;
 		background-position: center center;
 		background-size: cover;
 		position: absolute;
 		top:-1.24rem;
 	}
-	.button span{
+	.button .ing{
+		/*flex-direction:column;
+		justify-content:center;
+		align-items:center;*/
+		text-align: center;
+	}
+	.button .ing span{
 			font-size: 0.3rem;
 			color:#ffffff;
 			-webkit-line-clamp:1;
-          display:-webkit-box;
-          -webkit-box-orient:vertical;
-          text-overflow:ellipsis;
-          overflow:hidden;
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            text-overflow:ellipsis;
+            overflow:hidden;
 	}
-	.button	p{
+	.button	.ing p{
 			font-size: 0.16rem;
 			color:#ffffff;
 			-webkit-line-clamp:1;
-          display:-webkit-box;
-          -webkit-box-orient:vertical;
-          text-overflow:ellipsis;
-          overflow:hidden;
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            text-overflow:ellipsis;
+            overflow:hidden;
 	}
-
+	.button .huanc{
+		width:0.68rem;
+		height:0.68rem;
+		background: url($IMG_PATH+'/quan.png')no-repeat;
+		background-size: cover;
+		margin-left: 0.1rem;
+	}
 
 	.note-box{
 		width:100%;
@@ -233,7 +308,7 @@ html{
 		.note-button-left{
 			width:2.68rem;
 			height:0.08rem;
-			background: url(../images/zuo3.png) no-repeat;
+			background: url($IMG_PATH+'/zuo3.png') no-repeat;
 			background-position: center right ;
 			background-size: 0.38rem 0.08rem;
 		}
@@ -263,7 +338,7 @@ html{
 		.note-button-right{
 			width:2.68rem;
 			height:0.08rem;
-			background: url(../images/you.png) no-repeat;
+			background: url($IMG_PATH+'/you.png') no-repeat;
 			background-position: left center ;
 			background-size: 0.38rem 0.08rem;
 		}
@@ -275,7 +350,7 @@ html{
 .body-bottom{
 	width:100%;
 	height:4.1rem;
-	background:url(../images/83b84.png)no-repeat;
+	background:url($IMG_PATH+'/83b84.png')no-repeat;
 	background-position: left bottom;
 	background-size: 3.1rem 1.4rem;
 	opacity: 0.8;
@@ -284,7 +359,7 @@ html{
 	.photo-one{
 		width:5.48rem;
 		height:5.76rem;
-		background: url(../images/6581.png) no-repeat;
+		background: url($IMG_PATH+'/6581.png') no-repeat;
 		background-position: top left;
 		background-size:cover;
 		overflow: hidden;
@@ -295,7 +370,7 @@ html{
 	.photo-two{
 		width:2.48rem;
 		height:1rem;
-		background: url(../images/83b872b95a944.png) no-repeat;
+		background: url($IMG_PATH+'/83b872b95a944.png') no-repeat;
 		background-position:center center;
 		background-size: cover;
 		position: absolute;

@@ -1,0 +1,39 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:"苹方 粗体","微软雅黑",sans-serif;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+$device-list:320px,360px,375px,414px,750px;
+
+html{
+	@each $device in $device-list{
+		@media screen and(min-width: $device){
+			font-size: 100*($device/750);	
+			
+		}
+	}
+
+}
+body{
+	font-size: 16px;
+}
+
+@mixin bg(){
+
+	$r:floor(random()*256);
+	$g:floor(random()*256);
+	$b:floor(random()*256);
+	$a:floor(random()*3+6)/10;
+	$color:rgba($r,$g,$b,$a);
+	background: $color;
+}
+
+
