@@ -21,6 +21,10 @@ class loginController extends framework{
 //            $this->display('login');
 //        }
     }
+    function login(){
+        $this->display('admin/Login/Login');
+    }
+
     function check()
     {
 

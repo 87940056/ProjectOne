@@ -132,7 +132,7 @@ body {
 
 .search-result {
   width: 100%;
-  height: 4.52rem;
+  height: auto;
   background: #fff;
   border-radius: 0.12rem;
   margin-top: 0.9rem;
