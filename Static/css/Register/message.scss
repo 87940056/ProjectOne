@@ -1,7 +1,7 @@
 @import "../mixin";
 $img:"/Static/img";
 body{
-  background: url($img + "/register/mes_background.jpg") no-repeat top;
+  background: url($img + "/register/mes_background.png") no-repeat top;
   background-size: cover;
 }
 .tops{
