@@ -10,6 +10,9 @@ class indexController extends frameWork{
     function log(){
         $this->display('default/Log/Log');
     }
+    function loglist(){
+        $this->display('default/Log/LogList');
+    }
     function log_detail(){
         $this->display('default/Log/LogDetail');
     }

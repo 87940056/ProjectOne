@@ -13,7 +13,7 @@ class loginController extends framework{
 //    }
     function index()
     {
-        $this->display('default/Login/Login');
+        $this->display('admin/Login/login_home');
 //        session_start();
 //        if(isset($_SESSION['login'])){
 //            $this->redirect('/index.php/index');

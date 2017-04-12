@@ -1,0 +1,381 @@
+@import "../mixin";
+@import url('../base.css');
+
+$img: '/Static/img/personal/';
+body{
+    background: url($img +'1462.gif') no-repeat;
+    background-size:100% auto;
+}
+//返回 信息
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:93.6%;
+    height: 0.88rem;
+    margin: 0 auto;
+    .back{
+        width: 0.44rem;
+        height: 0.44rem;
+        border-radius: 50%;
+        background: url($img +'back.png') no-repeat;
+        background-size:0.44rem 0.44rem;      
+    }
+    .look{
+        width: 0.44rem;
+        height: 0.44rem;
+        border-radius: 50%;
+        background: url($img +'look.gif') no-repeat;
+        background-size:0.44rem 0.44rem;
+    }
+}
+//转发 点赞
+.transmit_juicy{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:93.6%;
+        height: 1.94rem;
+        margin: 0 auto;
+        .transmit{
+            width:0.71rem;
+            height:0.71rem;
+            border-radius: 50%;
+            background: url($img +'transmit.gif') center;
+            background-size: 0.7rem 0.7rem;
+        }
+        .juicy_box{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 1.47rem;
+            height: 0.7rem;
+            border: 2px solid #454272;
+            background: #050135;
+            border-radius: 0.4rem;
+            .juicy{
+                width:0.34rem;
+                height:0.7rem;
+                background: url($img +'juicy.gif') no-repeat center;
+                background-size: 0.32rem 0.28rem;
+            }
+            .num{
+                width: 0.66rem;
+                height: 0.7rem;
+                font-size:0.3rem;
+                text-align: center;
+                line-height: 0.7rem;
+                color:#e4e4e4;
+            }
+        }
+    }
+//  头像
+.head_portrait_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+        width: 93.6%;
+        height: 2.64rem;
+        margin: 0 auto; 
+        .head_portrait{
+            width: 1.51rem;
+            height: 1.51rem;
+            border-radius: 50%;
+            border:2px solid #FFFEFE;
+            background: url($img +'7a94e7269702411.gif') no-repeat;
+            background-size: 1.51rem 1.5rem;
+    }
+}
+//头像下的文字个人信息
+.info{
+    width:93.6%;
+    height:1.95rem;
+    margin: 0 auto;
+    .info_top{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width:100%;
+        height:1.06rem;
+        p{
+          margin-top: 0.1rem;
+          color:#383838;
+          font-size:0.3rem;  
+        }
+        span{
+            color:#5a5a5a;
+            font-size:0.24rem;
+        }
+        .strip{
+            margin: 0.09rem;
+            width: 1.41rem;
+            height: 0.01rem;
+            background: gray;
+        }
+     }
+    .info_bottom{
+        width:100%;
+        height:0.9rem;
+        .sign{
+            width: 93.6%;
+            height: 0.3rem;
+            margin: 0 auto;
+            color: #5a5a5a;
+            font-size: 0.22rem;
+            text-align: center;  
+        }
+        .star{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 0.61rem;        
+            .five_star{
+                width: 0.33rem;
+                height: 0.33rem;
+                background:url($img +'star.gif');
+                background-size: 0.33rem 0.33rem;
+            }
+        }
+    }
+}
+//动态 关注 粉丝
+.dynamic_state{
+    display: flex;
+    justify-content: space-between;
+    width: 93.6%;
+    margin: 0 auto;
+    height: 0.89rem;
+    color:#fff;
+    .dynamicboxes{
+        display: flex;
+        align-items: center;
+        width: 2.12rem;
+        height: 100%;
+        border-radius: 0.4rem;
+        background: #575757;
+        .dynamic_box{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 0.62rem;
+            .dynamic_left{
+                width: 0.72rem;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                .dynamic_cirs{
+                    width: 0.58rem;
+                    height: 0.58rem;
+                    border-radius: 50%;
+                    background: navajowhite;   
+                }
+                .follow{
+                    background: url($img +'dt.gif') no-repeat center/0.58rem;
+                }
+                .collect{
+                    background: url($img +'gz.gif') no-repeat center/0.58rem;
+                }
+                .fans{
+                    background: url($img +'fs.gif') no-repeat center/0.58rem;
+                }
+            }
+            .dynamic_right{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width:1.34rem;
+                height:100%;
+                .font_top{
+                    font-size: 0.3rem;
+                }
+                .font_bottom{
+                    font-size:0.26rem;
+                }
+            }
+            .fans_l{
+                width: 0.82rem;
+                height: 100%;
+            }
+            .fans_r{
+                width:1.1rem;
+                height:100%;
+            }      
+        }
+    }
+    .state_box{
+        background: #fd487d;
+    }
+}
+//朋友圈
+.circle_of_friends{
+    width: 93.6%;
+    height: auto;
+    margin: 0.2rem auto;
+    .infos{
+     margin-top: 0.05rem;
+     margin-bottom:0.05rem;
+     display: flex;
+     width: 100%;
+     height: auto;
+        .con_left{
+            width: 1.35rem;
+            height: 100%;
+            .head_por{
+                width: 1.01rem;
+                height: 1.01rem;
+                margin: 0 auto;
+                border-radius: 50%;
+                background: url($img +'7a94e7269702411.gif');
+                background-size: 1.01rem 1.01rem;
+            }
+        }
+        .con_con{
+            width:0.86rem;
+            height: 100%;
+            .sign_box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 1.01rem;
+                .sign{
+                    width:0.53rem;
+                    height: 0.56rem;
+                    background: url($img +'aa11.gif') no-repeat center/0.53rem 0.56rem;
+                }
+            }
+        }
+        .con_right{
+            width: 4.83rem;
+            height: 100%;
+            .top_infobox{
+                display: flex;
+                flex-direction:  column-reverse;
+                width: 100%;
+                height: 0.8rem;
+                .info_top{
+                    font-size:0.28rem;
+                }
+                .info_bottom{
+                    display:flex;
+                    justify-content: space-between;
+                    font-size:0.24rem;
+                }
+            }
+            .info_photobox{
+                display: flex;
+                flex-direction: column-reverse;
+                width:100%;
+                height:2.94rem;
+                .info_photo{
+                    width: 100%;
+                    height: 2.81rem;
+                    border-radius:0.02rem ;
+                    background: url($img +'477.gif') no-repeat center/100% 100%;
+                }
+            }
+            .info_fontbox{
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                height: 0.99rem;
+                .info_font{
+                    width: 100%;
+                    height: 0.7rem;
+                    font-size:0.24rem;
+                }
+            }
+            .icon_bottom{
+                width: 100%;
+                height: 0.42rem;
+                .iconbox{
+                    display: flex;
+                    width: 100%;
+                    height: 0.32rem;
+                    .icon_photo{
+                        display: flex;
+                        width: 33.54%;
+                        height: 0.32rem;
+                        .photo{
+                            width:0.32rem;
+                            height: 0.32rem;
+                            border-radius:50%;
+                        }
+                        span{
+                            padding-left: 0.06rem;
+                            line-height: 0.32rem;
+                            font-size: 0.16rem;
+                        }
+                        .photo_x{
+                            background: url($img +'x.gif') no-repeat center/0.2rem 0.14rem;
+                        }
+                        .photo_t{
+                            background: url($img +'t.gif') no-repeat center/0.2rem 0.2rem;
+                        }
+                        .photo_w{
+                            background: url($img +'w.gif') no-repeat center/0.2rem 0.2rem;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}
+
+//底部按钮
+.footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height:0.99rem;
+    color:#fff;
+    .footer_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:50%;
+        height: 100%;
+        float: left;
+        .center_box{
+            width: 2.47rem;
+            height: 0.57rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .cir_box{
+                width:0.57rem;
+                height:0.57rem;
+                border-radius: 50%;
+            }
+            .cir_senmess{
+                background:url($img +'111.gif') no-repeat center/0.57rem;
+            }
+            .cir_visp{
+                background:url($img +'320.gif') no-repeat center/0.54rem;
+            }
+            .footercons_box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 1.78rem;
+                height: auto;
+                .zh{
+                    font-size:0.26rem;
+                }
+                .us{
+                    font-size:0.2rem;
+                }
+            }
+        }
+    }
+    .footer_sendmessege{
+        background: #1f93e4;
+    }
+    .footer_visphone{
+        background: #13a928;
+    }
+}
