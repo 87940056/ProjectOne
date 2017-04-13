@@ -12,13 +12,13 @@
   html {
     font-size: 48.66667px; } }
 
-@media screen and (min-width: 412px) {
-  html {
-    font-size: 54.93333px; } }
-
 @media screen and (min-width: 375px) {
   html {
     font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
 
 @media screen and (min-width: 414px) {
   html {
@@ -33,6 +33,25 @@ body {
   background: #F5F5F5;
   -webkit-tap-highlight-color: transparent;
   font-family: "苹方 粗体","微软雅黑",sans-serif; }
+
+@keyframes xl {
+  0% {
+    height: 0; }
+  100% {
+    height: 3rem;
+    padding: 0.3rem 0.22rem; } }
+
+@keyframes tm {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.xl {
+  animation: xl 2s ease both; }
+
+.tm {
+  animation: tm .3s ease 1s both; }
 
 .inner {
   width: 92%;
@@ -74,42 +93,39 @@ body {
     box-shadow: #999 0px 0px 5px;
     margin: 0 auto;
     border-radius: 0.1rem;
-    margin-top: 0.35rem;
-    padding: 0.3rem 0.22rem; }
-    .title .order_list li {
-      height: 50%; }
-      .title .order_list li .list_number {
-        font-size: 0.24rem;
-        color: #A3A2A2; }
-      .title .order_list li .Car_info {
-        height: 1.55rem;
-        margin-top: 0.2rem;
-        display: flex; }
-        .title .order_list li .Car_info .left {
-          width: 1.6rem;
-          height: 100%;
-          background-image: url("/Static/img/pay/6.png");
+    margin-top: 0.35rem; }
+    .title .order_list li .list_number {
+      font-size: 0.24rem;
+      color: #A3A2A2;
+      display: none; }
+    .title .order_list li .Car_info {
+      margin-top: 0.2rem;
+      display: flex; }
+      .title .order_list li .Car_info .left {
+        width: 1.6rem;
+        background-image: url("/Static/img/pay/6.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: zoomIn .7s ease 1s both; }
+      .title .order_list li .Car_info .right {
+        flex: 1;
+        padding-left: 0.2rem; }
+        .title .order_list li .Car_info .right h3 {
+          font-size: 0.3rem;
+          color: #535353; }
+        .title .order_list li .Car_info .right i {
+          display: block;
+          width: 0.53rem;
+          height: 0.04rem;
+          background-image: url("/Static/img/pay/7.png");
           background-size: contain;
-          background-repeat: no-repeat; }
-        .title .order_list li .Car_info .right {
-          flex: 1;
-          padding-left: 0.2rem; }
-          .title .order_list li .Car_info .right h3 {
-            font-size: 0.3rem;
-            color: #535353; }
-          .title .order_list li .Car_info .right i {
-            display: block;
-            width: 0.53rem;
-            height: 0.04rem;
-            background-image: url("/Static/img/pay/7.png");
-            background-size: contain;
-            margin: 0.05rem 0; }
-          .title .order_list li .Car_info .right p {
-            font-size: 0.24rem;
-            color: #A3A2A2; }
-          .title .order_list li .Car_info .right h4 {
-            font-size: 0.3rem;
-            color: #FF1652; }
+          margin: 0.05rem 0; }
+        .title .order_list li .Car_info .right p {
+          font-size: 0.24rem;
+          color: #A3A2A2; }
+        .title .order_list li .Car_info .right h4 {
+          font-size: 0.3rem;
+          color: #FF1652; }
   .title .order_details {
     width: 6.24rem;
     margin: 0.8rem auto 0;
@@ -196,7 +212,8 @@ body {
       .title .pay .price h1 {
         font-size: 0.96rem;
         color: #FF7928;
-        font-weight: normal; }
+        font-weight: normal;
+        animation: rotateIn 1s ease; }
     .title .pay .total {
       display: flex;
       justify-content: center;

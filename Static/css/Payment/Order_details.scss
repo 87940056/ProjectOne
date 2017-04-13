@@ -1,5 +1,28 @@
 @import "../mixin.scss";
 @import url(../base.css);
+@keyframes xl {
+  0%{
+    height:0;
+  }
+  100%{
+    height:3rem;
+    padding: 0.3rem 0.22rem;
+  }
+}
+@keyframes tm {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+.xl{
+  animation:xl 2s ease both;
+}
+.tm{
+  animation:tm .3s ease 1s both;
+}
 $img:"/Static/img/pay/";
 .inner{
   width:92%;
@@ -48,23 +71,24 @@ $img:"/Static/img/pay/";
     margin: 0 auto;
     border-radius: 0.1rem;
     margin-top: 0.35rem;
-    padding: 0.3rem 0.22rem;
+    //padding: 0.3rem 0.22rem;
     li{
-      height:50%;
       .list_number{
         font-size: 0.24rem;
         color: #A3A2A2;
+        display: none;
       }
       .Car_info{
-        height:1.55rem;
+        //height:1.55rem;
         margin-top: 0.2rem;
         display: flex;
         .left{
           width:1.6rem;
-          height:100%;
+          //height:100%;
           background-image: url($img +"6.png");
           background-size: contain;
           background-repeat: no-repeat;
+          animation:zoomIn .7s ease 1s both;
         }
         .right{
           flex: 1;
@@ -205,6 +229,7 @@ $img:"/Static/img/pay/";
         font-size: 0.96rem;
         color: #FF7928;
         font-weight: normal;
+        animation:rotateIn 1s ease;
       }
     }
     .total{
