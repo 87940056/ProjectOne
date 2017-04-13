@@ -95,7 +95,7 @@ body{
       height: 100%;
       background:url($img + "/register/user.png") no-repeat;
       background-position:center;
-      background-size:cover;
+      background-size:contain;
       float: left;
     }
     input{
@@ -118,7 +118,7 @@ body{
       height: 100%;
       background:url($img + "/register/phone.png") no-repeat;
       background-position:center;
-      background-size:cover;
+      background-size:contain;
       float: left;
     }
     input{
@@ -142,7 +142,7 @@ body{
       height: 100%;
       background:url($img + "/register/loak.png") no-repeat;
       background-position:center;
-      background-size:cover;
+      background-size:contain;
       float: left;
     }
     input{
@@ -159,7 +159,7 @@ body{
       height: 100%;
       background:url($img + "/register/kay.png") no-repeat left center;
       background-position:center;
-      background-size:cover;
+      background-size: 30%;
       float: right;
     }
   }
@@ -173,7 +173,7 @@ body{
       height: 100%;
       background:url($img + "/register/loak.png") no-repeat;
       background-position:center;
-      background-size:cover;
+      background-size:contain;
       float: left;
     }
     input{

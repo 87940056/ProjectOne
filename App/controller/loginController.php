@@ -1,8 +1,9 @@
 <?php
 namespace App\controller;
-use Core\framework;
 
-class loginController extends framework{
+use Core\frameWork;
+
+class loginController extends frameWork{
 //    function __construct()
 //    {
 //        if(isset($_COOKIE['login'])) {

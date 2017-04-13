@@ -1,11 +1,10 @@
 <?php
 namespace App\controller;
 use App\model\musicModel;
-use Core\dbPdo;
 use Core\frameWork;
 class indexController extends frameWork{
     function index(){
-        $this->display('default/Home/Home');
+        $this->display('default/Home/home');
     }
     function log(){
         $this->display('default/Log/Log');
@@ -17,7 +16,7 @@ class indexController extends frameWork{
         $this->display('default/Log/LogDetail');
     }
     function car_rent(){
-        $this->display('default/CarrEnt/CarRent');
+        $this->display('default/CarRent/CarRent');
     }
     function personal(){
         $this->display('default/Personal/Personal');

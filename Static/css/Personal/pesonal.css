@@ -1,0 +1,275 @@
+@charset "UTF-8";
+@import url("../base.css");
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+
+body {
+  font-size: 16px;
+  background: #F5F5F5;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "苹方 粗体","微软雅黑",sans-serif; }
+
+body {
+  background: url("/Static/img/personal/15.png") no-repeat top/100% auto; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 93.6%;
+  height: 0.88rem;
+  margin: 0 auto; }
+  .nav .nav_box {
+    width: 0.47rem;
+    height: 0.47rem;
+    background: pink; }
+  .nav .situer {
+    background: url("/Static/img/personal/situer.gif") no-repeat center/0.47rem; }
+  .nav .jour {
+    background: url("/Static/img/personal/aa11.gif") no-repeat center;
+    background-size: 0.73rem 0.67rem; }
+
+.header_con {
+  display: flex;
+  align-items: flex-end;
+  width: 93.6%;
+  height: 2.97rem;
+  margin: 0 auto; }
+  .header_con .con_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85.59%;
+    height: 2.01rem;
+    margin: 0 auto; }
+  .header_con .write {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: url("/Static/img/personal/write.gif") no-repeat center/0.6rem; }
+  .header_con .header {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: url("/Static/img/personal/header.gif") no-repeat center/2rem; }
+  .header_con .setting {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: url("/Static/img/personal/setting.gif") no-repeat center/0.6rem; }
+
+.star_box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 67.6%;
+  height: 0.47rem;
+  margin: 0 auto; }
+  .star_box .star {
+    width: 0.24rem;
+    height: 0.24rem;
+    background: url("/Static/img/personal/star.gif") no-repeat center/0.22rem; }
+
+.singer_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 67.6%;
+  height: 1.66rem;
+  margin: 0 auto; }
+  .singer_box .name_zh {
+    font-size: 0.3rem; }
+  .singer_box .name_us {
+    font-size: 0.24rem; }
+  .singer_box .singer {
+    font-size: 0.22rem; }
+
+.attenfans {
+  display: flex;
+  justify-content: space-between;
+  width: 93.6%;
+  height: 1.8rem; }
+  .attenfans .myatten_bg {
+    width: 3.37rem;
+    height: 1.44rem;
+    border-radius: 0.05rem;
+    background: url("/Static/img/personal/atten.gif") no-repeat center/3.37rem 1.44rem; }
+  .attenfans .myfans_bg {
+    width: 3.37rem;
+    height: 1.44rem;
+    border-radius: 0.05rem;
+    background: url("/Static/img/personal/fansbg.gif") no-repeat center/3.37rem 1.44rem; }
+
+.faculte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 93.6%;
+  height: 4.54rem;
+  margin: 0 auto; }
+  .faculte .facultebox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 0.83rem; }
+    .faculte .facultebox .facultebox_left {
+      display: flex;
+      width: 3.37rem;
+      height: 100%; }
+      .faculte .facultebox .facultebox_left .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0.93rem;
+        height: 100%; }
+        .faculte .facultebox .facultebox_left .icons .cir {
+          width: 0.58rem;
+          height: 0.58rem;
+          border-radius: 50%; }
+        .faculte .facultebox .facultebox_left .icons .news_cir {
+          background: url("/Static/img/personal/news.gif") no-repeat center/0.58rem; }
+        .faculte .facultebox .facultebox_left .icons .oeder_cir {
+          background: url("/Static/img/personal/oeder.gif") no-repeat center/0.58rem; }
+        .faculte .facultebox .facultebox_left .icons .wallet_cir {
+          background: url("/Static/img/personal/wallet.gif") no-repeat center/0.58rem; }
+        .faculte .facultebox .facultebox_left .icons .privilege_cir {
+          background: url("/Static/img/personal/privilege.gif") no-repeat center/0.58rem; }
+        .faculte .facultebox .facultebox_left .icons .volunteer_cir {
+          background: url("/Static/img/personal/volunteer.gif") no-repeat center/0.58rem; }
+        .faculte .facultebox .facultebox_left .icons .collection_cir {
+          background: url("/Static/img/personal/collection.gif") no-repeat center/0.58rem; }
+      .faculte .facultebox .facultebox_left .fonts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 2.44rem;
+        height: 100%; }
+        .faculte .facultebox .facultebox_left .fonts .fonts_zh {
+          font-size: 0.24rem;
+          color: #333; }
+        .faculte .facultebox .facultebox_left .fonts .fonts_us {
+          font-size: 0.2rem;
+          color: #aaa; }
+    .faculte .facultebox .facultebox_right {
+      width: 3.37rem;
+      height: 100%; }
+      .faculte .facultebox .facultebox_right .btn_box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 3.15rem;
+        height: 100%; }
+        .faculte .facultebox .facultebox_right .btn_box .news_btn {
+          width: 0.72rem;
+          height: 0.42rem;
+          border-radius: 0.3rem;
+          background: #ff3469;
+          text-align: center;
+          line-height: 0.42rem;
+          font-size: 0.22rem;
+          color: #fff; }
+        .faculte .facultebox .facultebox_right .btn_box .btns {
+          width: 0.38rem;
+          height: 0.38rem;
+          border-radius: 50%;
+          background: url("/Static/img/personal/btns.gif") no-repeat center/0.38rem; }
+
+.tandance {
+  display: flex;
+  justify-content: space-between;
+  width: 93.6%;
+  height: 2.13rem;
+  margin: 0.2rem auto 1.8rem; }
+  .tandance .tan_headbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 1.48rem;
+    height: 1.59rem; }
+    .tandance .tan_headbox .tan_cir {
+      width: 0.92rem;
+      height: 0.92rem;
+      border-radius: 50%;
+      background: url("/Static/img/personal/7a94e7269702411.gif") no-repeat center/0.92rem; }
+    .tandance .tan_headbox .tanbox_stars {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 0.37rem; }
+      .tandance .tan_headbox .tanbox_stars .tan_star {
+        width: 0.24rem;
+        height: 0.24rem;
+        background: url("/Static/img/personal/star.gif") no-repeat center/0.22rem; }
+  .tandance .tan_info {
+    display: flex;
+    flex-direction: column;
+    width: 5.36rem;
+    height: 100%;
+    font-size: 0.24rem; }
+    .tandance .tan_info .taninfo_top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 0.81rem; }
+      .tandance .tan_info .taninfo_top .info_us {
+        color: #7d7d7d; }
+      .tandance .tan_info .taninfo_top .info_zh {
+        color: #000; }
+    .tandance .tan_info .taninfo_center {
+      width: 100%;
+      height: 0.79rem; }
+      .tandance .tan_info .taninfo_center .info_mess {
+        color: #7d7d7d; }
+    .tandance .tan_info .taninfo_bottom {
+      display: flex;
+      width: 100%;
+      height: 0.53rem; }
+      .tandance .tan_info .taninfo_bottom .iconnav {
+        display: flex;
+        align-items: center;
+        width: 1.63rem;
+        height: 100%; }
+        .tandance .tan_info .taninfo_bottom .iconnav .photo {
+          width: 0.32rem;
+          height: 0.32rem;
+          border-radius: 50%;
+          background: blanchedalmond; }
+        .tandance .tan_info .taninfo_bottom .iconnav span {
+          padding-left: 0.08rem; }
+        .tandance .tan_info .taninfo_bottom .iconnav .photo_x {
+          background: url("/Static/img/personal/x.gif") no-repeat center/0.2rem 0.14rem; }
+        .tandance .tan_info .taninfo_bottom .iconnav .photo_t {
+          background: url("/Static/img/personal/t.gif") no-repeat center/0.2rem 0.2rem; }
+        .tandance .tan_info .taninfo_bottom .iconnav .photo_w {
+          background: url("/Static/img/personal/w.gif") no-repeat center/0.2rem 0.2rem; }
+
+footer .bacPoint {
+  width: 1.1rem;
+  height: 0.14rem;
+  position: absolute;
+  top: -0.07rem;
+  right: 0.24rem;
+  display: flex;
+  justify-content: space-between; }
