@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(../base.css);
 @media screen and (min-width: 320px) {
   html {
     font-size: 42.66667px; } }
@@ -12,13 +11,13 @@
   html {
     font-size: 48.66667px; } }
 
-@media screen and (min-width: 412px) {
-  html {
-    font-size: 54.93333px; } }
-
 @media screen and (min-width: 375px) {
   html {
     font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
 
 @media screen and (min-width: 414px) {
   html {
@@ -329,7 +328,7 @@ body {
   border-radius: 3px;
   /*background:red;*/ }
   .sanl span {
-    width: 0 0.9rem;
+    width: 0.9rem;
     height: 0.26rem;
     font-size: 14px;
     display: block;
@@ -352,15 +351,13 @@ body {
     width: 1.37rem;
     height: 1.24rem;
     float: left;
-    background: url(../images/huaan.png) no-repeat center center;
+    background: url("/Static/img/personal/huaan.png") no-repeat center center;
     background-size: 0.98rem 0.93rem;
     overflow: hidden; }
     .foots .footl .footls {
       width: 0.8rem;
       height: 0.8rem;
       float: left;
-      /*background:url(../images/aa.png)no-repeat center center;*/
-      background-size: 1rem 1rem;
       border-radius: 50%;
       overflow: hidden;
       background-position: 50% 5%;
@@ -389,7 +386,7 @@ body {
     .foots .wz .xin {
       width: 0.18rem;
       height: 0.16rem;
-      background: url(../images/xinxin.png) no-repeat center center;
+      background: url("/Static/img/personal/xinxin.png") no-repeat center center;
       display: block;
       float: left;
       background-size: 18px 16px;
@@ -416,7 +413,7 @@ body {
       .foots .footc .footcc .jian {
         width: 0.22rem;
         height: 0.22rem;
-        background: url(../images/xiajian.png) no-repeat center center;
+        background: url("/Static/img/personal/xiajian.png") no-repeat center center;
         background-size: 0.14rem 0.18rem;
         display: block;
         float: left; }
@@ -448,13 +445,13 @@ body {
   background: #F61D50; }
 
 .footls.photo {
-  background: url(../images/bb.png) no-repeat center center; }
+  background: url("/Static/img/personal/bb.png") no-repeat center center/105%; }
 
 .footls.photoa {
-  background: url(../images/aa.png) no-repeat center center; }
+  background: url("/Static/img/personal/aa.png") no-repeat center center; }
 
 .footls.photoc {
-  background: url(../images/cc.png) no-repeat center center; }
+  background: url("/Static/img/personal/cc.png") no-repeat center center; }
 
 .footls.photod {
-  background: url(../images/dd.png) no-repeat center center; }
+  background: url("/Static/img/personal/dd.png") no-repeat center center; }
