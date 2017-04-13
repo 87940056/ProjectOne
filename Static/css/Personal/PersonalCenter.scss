@@ -1,0 +1,512 @@
+
+$padding:0 0.24rem;
+@import "../mixin.scss";
+@import url(../base.css);
+.container-fluid{
+	width:100%;
+	padding:$padding;
+	height:100%;
+}
+$IMG_PATH:"/Static/img/personal/";
+/*头部*/
+.header{
+  	width:100%;
+  	height:0.88rem;
+  	background:#1CC120;
+  	.nav{
+	    width:100%;
+	    height:0.88rem;
+	    display:flex;
+	    display:-webkit-flex;
+	    justify-content:space-between;
+	    align-items:center;
+	    .return a{
+	      	display:block;
+	      	width:0.44rem;
+	      	height:0.44rem;
+	      	span{
+	        	display:block;
+	        	width:100%;
+	        	height:100%;
+	        	background:url($IMG_PATH +'back.png') no-repeat center center;
+	        	background-size:cover;
+	      	}
+	    }
+	    .title{
+	      	display:-webkit-flex;
+	      	flex-wrap:wrap;
+	      	flex-direction:column;
+	      	color:#fff;
+	      	justify-content:center;
+	      	align-items:center;
+	      	margin:0 auto;
+	      	h2{
+	        	font-size:14px;
+	      	}
+	      	span{
+	        	font-size:10px;
+	        	font-weight:normal;
+	      	}
+	    }
+    }
+}
+
+
+.head{
+	width:6.75rem;
+	height:1.01rem;
+	background:#FFFFFF;
+	margin-top: 0.3rem;
+	margin-left: 0.24rem;
+	border:1px solid #E0E0E0;
+	border-radius: 3px;
+	display: flex;
+	.heads{
+		width:0.75rem;
+		height:0.75rem;
+		display: flex;
+		float:left;
+		box-shadow:1px 1px 3px #292929;
+		span{
+			background:url($IMG_PATH +'xiaohua.png')no-repeat center center;
+			width:100%;
+			height:100%;
+			background-size: cover;
+			display: block;
+			align-items: center;
+		}
+	}
+	.headscon{
+		width:4.9rem;
+		height:100%;
+		float:left;
+		span{
+			width:2.2rem;
+			height:0.53rem;
+			border-bottom:1px dashed #D8D8D8;
+			font-size: 12px;
+			display: block;
+			line-height: 0.53rem;
+			margin-left: 20px;
+			color:#666666;	
+			letter-spacing: 0.5px;
+
+		}
+		.wz{
+			width:4rem;
+			height:0.48rem;
+			font-size: 11px;
+			display: block;
+			color:#BBBBBB;
+			line-height: 0.48rem;
+			border:0;
+		}
+	}
+	.headsrig{
+		width:0.74rem;
+		height:0.42rem;
+		border-radius: 30px;
+		background:#FF3469;
+		float:left;
+		margin-right:0.18rem;
+		align-items:center;
+		display: flex;
+		margin-top: 0.25rem;
+
+		span{
+			width:100%;
+			height:100%;
+			font-size: 12px;
+			display: block;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			line-height: 0.42rem;
+
+		}
+	}	
+}
+
+
+
+
+.headb{
+	width:6.75rem;
+	height:1.01rem;
+	background:#FFFFFF;
+	margin-top: 0.1rem;
+	margin-left: 0.24rem;
+	border:1px solid #E0E0E0;
+	border-radius: 3px;
+	display: flex;
+	.headsb{
+		width:0.8rem;
+		height:0.8rem;
+		display: flex;
+		float:left;
+		box-shadow:1px 1px 3px #292929;
+		span{
+			background:url($IMG_PATH +'xiaoxin.png')no-repeat center center;
+			width:100%;
+			height:100%;
+			background-size: cover;
+			display: block;
+			align-items: center;
+			line-height: 0.48rem;
+		}
+	}
+	.headsconb{
+		width:4.9rem;
+		height:100%;
+		float:left;
+		span{
+			width:2.2rem;
+			height:0.53rem;
+			border-bottom:1px dashed #D8D8D8;
+			font-size: 12px;
+			display: block;
+			line-height: 0.53rem;
+			margin-left: 20px;
+			color:#666666;	
+			letter-spacing: 0.5px;
+		}
+		.wzb{
+			width:4rem;
+			height:0.48rem;
+			font-size: 11px;
+			display: block;
+			color:#BBBBBB;
+			line-height: 0.48rem;
+			border:0;
+		}
+	}
+	.headsrigb{
+		width:0.35rem;
+		height:0.35rem;
+		border-radius: 50%;
+		background:#F0F0F0;
+		float:left;
+		margin-left:0.2rem;
+		align-items:center;
+		display: flex;
+		margin-top: 0.32rem;
+		border:1px solid #D7D7D7;
+		span{
+			width:0.1rem;
+			height:0.15rem;
+			background:url($IMG_PATH +'more.png')no-repeat center center;
+			display: block;
+			background-size: cover;
+			margin-left: 0.1rem;
+		}
+
+	}	
+}
+
+/*全部粉丝*/
+.friends{
+	width:6.75rem;
+	height:0.85rem;
+	margin-top:0.48rem;
+	margin-left: 0.24rem;
+	border-radius: 3px;
+	.friend{
+		width:1.78rem;
+		height:100%;
+		float:left;
+		span{
+			width:0.1rem;
+			height:0.1rem;
+			background:#13993F;
+			border-radius: 50%;
+			display: block;
+			float:left;
+			margin-right: 0.06rem;
+			margin-left: 0.02rem;
+
+		}
+		span:nth-child(2){
+			background:#FFCF29;
+			margin-left: 0;
+		}
+		h2{
+			width:100%;
+			height:0.3rem;
+			font-size: 14px;
+			float:left;
+			display: block;
+			color:#333333;
+
+		}
+		h3{
+			width:100%;
+			height:0.4rem;
+			font-size: 11px;
+			float:left;
+			display: block;
+			color:#666666;
+			margin-top: 0.12rem;
+			border-bottom:1px solid #CFCFCF;
+
+		}
+	}
+}
+
+
+/*好友数量*/
+.haoyou{
+	width:6.75rem;
+	height:0.7rem;
+	float:left;
+	border-radius: 3px;
+	margin-left: 0.24rem;
+	margin-top: 0.1rem;
+	display: flex;
+	span{
+		width:2.35rem;
+		height:100%;
+		font-size: 13px;
+		color:#333333;
+		display: block;
+		line-height: 0.7rem;
+		float:left;
+	}
+	span:nth-child(2){
+		width:0.64rem;
+		height:100%;
+		font-size: 14px;
+		color:#FCC727;
+		float:left;
+		margin-left: 3.5rem;
+	}
+}
+
+
+.search{
+    width:6.75rem;
+    height:0.8rem;
+    background:#fff;
+    border-radius:3px;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-left: 0.24rem;
+    button{
+      flex:0 0 22%;
+      font-size:15px;
+      color:#FCC727;
+      background:none;
+      border:0;
+      display:flex;
+      display:-webkit-flex;
+      justify-content:space-around;
+      align-items:center;
+      outline:none;
+      span{
+        display:block;
+        border-radius:50%;
+        width:0.06rem;
+        height:0.06rem;
+        &:nth-child(1){
+          background:#1D4BE9;
+        }
+        &:nth-child(2){
+          background:#1CC120;
+        }
+      }
+    }
+    .s-xian{
+      height:86%;
+      border:1px dashed #D3D3D3;
+      margin:0.1rem 0;
+    }
+    .search-p{
+      flex:0 0 50%;
+      height:100%;
+      border:0;
+      padding:0.1rem;
+      outline:none;
+      color:#D0D0D0;
+      font-size: 13px;
+
+    }
+    .vioce{
+      display:block;
+      width:0.36rem;
+      height:0.36rem;
+      span{
+        display:block;
+        width:100%;
+        height:100%;
+        background:url($IMG_PATH +'sousuo.png') no-repeat center center;
+        background-size:cover;
+      }
+    }
+}   
+
+
+
+.sanl{
+	width:6.75rem;
+	height:0.8rem;
+	float:left;
+	margin-left: 0.24rem;
+	border-radius: 3px;
+	/*background:red;*/
+	span{
+		width:.0.9rem;
+		height:0.26rem;
+		font-size: 14px;
+		display: block;
+		line-height: 0.8rem;
+		margin-left: 0.15rem;
+		color:#445153;
+		margin-top: 0.1rem;
+	}
+} 
+
+/*内容*/
+.foots{
+	width:6.75rem;
+	height:1.24rem;
+	background:#FFFFFF;
+	border-radius: 3px;
+	margin-left: 0.24rem;
+	float:left;
+	border:1px solid #E3E3E3;
+	margin-bottom: 0.13rem;
+	.footl{
+		width:1.37rem;
+		height:1.24rem;
+		float:left;
+		background:url(../images/huaan.png)no-repeat center center;
+		background-size: 0.98rem 0.93rem;
+		overflow: hidden;
+		.footls{
+			width:0.8rem;
+			height:0.8rem;
+			float:left;
+			/*background:url(../images/aa.png)no-repeat center center;*/
+			background-size: 1rem 1rem;
+			border-radius: 50%;
+			overflow: hidden;
+			background-position: 50% 5%;
+			margin-left: 0.24rem;
+			margin-top: 0.2rem;
+
+		}
+
+	}
+	.xian{
+		width:0.03rem;
+		height:0.7rem;
+		background:#E4E4E4;
+		display: block;
+		float:left;
+		margin-top: 0.27rem;
+	}
+	.wz{
+		width:2.4rem;
+		height:0.38rem;
+		border-bottom:1px dashed #CFCFCF;
+		float:left;
+		margin-left: 0.24rem;
+		margin-top: 0.1rem;
+		.wzs{
+			font-size: 13px;
+			color:#717171;
+			display: block;
+			float:left;
+			margin-right: 0.4rem;
+			
+		}
+		.xin{
+			width:0.18rem;
+			height:0.16rem;
+			background:url(../images/xinxin.png)no-repeat center center;
+			display: block;
+			float:left;
+			background-size:18px 16px;
+			margin-top: 0.1rem;
+			margin-left: 0.05rem;
+		}
+
+	}
+	.footc{
+		width:4.1rem;
+		height:0.65rem;
+		float:left;
+		display: flex;
+		flex-direction:column;
+		justify-content:space-between;
+		span{
+			width:100%;
+			height:0.37rem;
+			font-size: 13px;
+			color:#979797;
+			margin-left: 0.24rem;
+
+		}
+		.footcc{
+			width:4.15rem;
+			height:0.28rem;
+			float:left;
+			margin-left: 0.24rem;		
+			.jian{
+				width:0.22rem;
+				height:0.22rem;
+				background:url(../images/xiajian.png)no-repeat center center;
+				background-size: 0.14rem 0.18rem;
+				display: block;
+				float:left;
+
+			}
+			.footcs{
+				width:3.88rem;
+				height:0.28rem;
+				font-size: 9px;			
+				display: block;
+				float:left;
+				color:#C4C4C4;
+				margin-left: 0.05rem;
+
+			}
+		}
+	}
+	.footr{
+		width:0.88rem;
+		height:0.4rem;
+		float:left;
+		border-radius: 30px;
+		background:#575757;
+		margin-left: 0.15rem;
+		.text{
+			width:100%;
+			height:100%;
+			font-size: 11px;
+			color:#FFF;
+			display: block;
+			text-align: center;
+			line-height: 0.4rem;
+
+
+		}
+	}
+}
+.footr.bg_color{
+	background:#F61D50;
+}
+
+.footls.photo{
+	background:url(../images/bb.png)no-repeat center center;
+}
+.footls.photoa{
+	background:url(../images/aa.png)no-repeat center center;
+}
+.footls.photoc{
+	background:url(../images/cc.png)no-repeat center center;
+}
+.footls.photod{
+	background:url(../images/dd.png)no-repeat center center;
+}

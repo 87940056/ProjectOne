@@ -8,6 +8,14 @@
   html {
     font-size: 48px; } }
 
+@media screen and (min-width: 365px) {
+  html {
+    font-size: 48.66667px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
 @media screen and (min-width: 375px) {
   html {
     font-size: 50px; } }
@@ -21,7 +29,10 @@
     font-size: 100px; } }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  background: #F5F5F5;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "苹方 粗体","微软雅黑",sans-serif; }
 
 .header {
   width: 100%;
