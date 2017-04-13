@@ -49,11 +49,16 @@ body {
     display: flex;
     display: -webkit-flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
     .header .nav .return a {
       display: block;
       width: 0.44rem;
-      height: 0.44rem; }
+      height: 0.44rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
       .header .nav .return a span {
         display: block;
         width: 100%;

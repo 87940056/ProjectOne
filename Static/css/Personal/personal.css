@@ -35,7 +35,7 @@ body {
   font-family: "苹方 粗体","微软雅黑",sans-serif; }
 
 body {
-  background: url("/Static/img/personal/15.png") no-repeat top/100% auto; }
+  background: #f5f5f5 url("/Static/img/personal/15.png") no-repeat top/100% auto; }
 
 .nav {
   display: flex;
@@ -49,7 +49,7 @@ body {
     height: 0.47rem;
     background: pink; }
   .nav .situer {
-    background: url("/Static/img/personal/situer.gif") no-repeat center/0.47rem; }
+    background: url("/Static/img/personal/location.png") no-repeat center/0.47rem; }
   .nav .jour {
     background: url("/Static/img/personal/aa11.gif") no-repeat center;
     background-size: 0.73rem 0.67rem; }
@@ -113,17 +113,18 @@ body {
 .attenfans {
   display: flex;
   justify-content: space-between;
-  width: 93.6%;
-  height: 1.8rem; }
+  width: 100%;
+  height: 1.8rem;
+  padding: 0 0.24rem; }
   .attenfans .myatten_bg {
     width: 3.37rem;
     height: 1.44rem;
-    border-radius: 0.05rem;
+    border-radius: 0.1rem;
     background: url("/Static/img/personal/atten.gif") no-repeat center/3.37rem 1.44rem; }
   .attenfans .myfans_bg {
     width: 3.37rem;
     height: 1.44rem;
-    border-radius: 0.05rem;
+    border-radius: 0.1rem;
     background: url("/Static/img/personal/fansbg.gif") no-repeat center/3.37rem 1.44rem; }
 
 .faculte {
@@ -131,13 +132,16 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 93.6%;
-  height: 4.54rem;
   margin: 0 auto; }
   .faculte .facultebox {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 0.83rem; }
+    height: 0.8rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    margin-top: 0.1rem;
+    box-shadow: 0 0 0.1rem #ccc; }
     .faculte .facultebox .facultebox_left {
       display: flex;
       width: 3.37rem;
@@ -173,9 +177,9 @@ body {
         .faculte .facultebox .facultebox_left .fonts .fonts_zh {
           font-size: 0.24rem;
           color: #333; }
-        .faculte .facultebox .facultebox_left .fonts .fonts_us {
+        .faculte .facultebox .facultebox_left .fonts .font_us {
           font-size: 0.2rem;
-          color: #aaa; }
+          color: #666; }
     .faculte .facultebox .facultebox_right {
       width: 3.37rem;
       height: 100%; }
