@@ -7,7 +7,7 @@ class frameWork{
         $_SESSION[$k]=$v;
     }
     public function redirect($url){
-        header('Location:index.php/'.$url);
+        header('Location:/index.php'.$url);
     }
     public function assign($k,$v){
         $this->arr[$k]=$v;
