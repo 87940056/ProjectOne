@@ -112,7 +112,7 @@ body {
       height: 100%;
       background: url("/Static/img/register/user.png") no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       float: left; }
     .hezi .user input {
       float: left;
@@ -132,7 +132,7 @@ body {
       height: 100%;
       background: url("/Static/img/register/phone.png") no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       float: left; }
     .hezi .phone input {
       float: left;
@@ -152,7 +152,7 @@ body {
       height: 100%;
       background: url("/Static/img/register/loak.png") no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       float: left; }
     .hezi .password input {
       float: left;
@@ -167,7 +167,7 @@ body {
       height: 100%;
       background: url("/Static/img/register/kay.png") no-repeat left center;
       background-position: center;
-      background-size: cover;
+      background-size: 30%;
       float: right; }
   .hezi .passwordagin {
     width: 6.3rem;
@@ -179,7 +179,7 @@ body {
       height: 100%;
       background: url("/Static/img/register/loak.png") no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       float: left; }
     .hezi .passwordagin input {
       float: left;
