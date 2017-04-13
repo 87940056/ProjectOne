@@ -112,7 +112,6 @@ body{
   }
 }
 
-
 .con_header {
   width: 100%;
   height: 0.5rem;
@@ -549,19 +548,21 @@ body{
   overflow: hidden;
   $recommend_content_width: 13.88rem;
   .content {
-    width: $recommend_content_width;
+    width: 100%;
     height: 5.7rem;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -$recommend_content_width/2;
-    display: flex;
+    margin-top: 0.2rem;
+    position: relative;
+    .itemBox{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+      overflow-x: scroll;
+      display: flex;
+    }
     .item {
       width: 4.28rem;
       height: 100%;
-      background: orange;
-      position: relative;
-      z-index:1;
       flex-shrink: 0;
     }
     .item:nth-child(2){

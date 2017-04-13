@@ -26,7 +26,7 @@
 	$color : rgba($r,$g,$b,$a);
 	background-color: $color;
 }
-$device: 320px,360px,365px,412px,375px,414px,750px;
+$device: 320px,360px,365px,375px,412px,414px,750px;
 html{
 	@each $i in $device{
 		@media screen and(min-width: #{$i}){

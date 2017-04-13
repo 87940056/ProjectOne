@@ -2,18 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="complete attributes of css3">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Add to homescreen for Safari on Ios -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#14B42B">
-    <meta name="apple-mobile-web-app-title" content="css3">
-    <link rel="apple-touch-icon" href="/Static/img/logo.png">
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="随心随行">
-    <meta name="theme-color" content="#14B42B">
-    <link rel="icon" sizes="192x192" href="/Static/img/logo.png">
+    <?php include 'App/views/meta.html' ?>
     <title>首页</title>
     <link rel="stylesheet" href="<?php echo CSS_PATH ?>/Home/Home.css">
 </head>
@@ -433,10 +422,12 @@
                 <li></li>
             </ul>
         </div>
-        <ul class="content">
-            <li class="item"></li>
-            <li class="item"></li>
-            <li class="item"></li>
+        <div class="content">
+            <ul class="itemBox">
+                <li class="item"></li>
+                <li class="item"></li>
+                <li class="item"></li>
+            </ul>
             <div class="bacPoint">
                 <div></div>
                 <div></div>
@@ -446,7 +437,7 @@
                 <li class="active"></li>
                 <li></li>
             </ul>
-        </ul>
+        </div>
     </div>
 
     <link rel="stylesheet" href="<?php echo CSS_PATH ?>/tab_footer.css">

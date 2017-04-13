@@ -12,13 +12,13 @@
   html {
     font-size: 48.66667px; } }
 
-@media screen and (min-width: 412px) {
-  html {
-    font-size: 54.93333px; } }
-
 @media screen and (min-width: 375px) {
   html {
     font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
 
 @media screen and (min-width: 414px) {
   html {
