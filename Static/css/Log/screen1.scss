@@ -1,6 +1,57 @@
 @import "../mixin";
 @import url('../base.css');
 $img:'/Static/img/';
+
+@keyframes move{
+  0%{
+    transform: translate3d(300%,0,0);
+  }
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
+@keyframes movee {
+  0%{
+    transform: translate3d(-200%,0,0);
+  }
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
+@keyframes scale {
+  0%{
+    transform: scale(0,0);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+@keyframes movet {
+  0%{
+    transform: translate3d(0,0,0);
+  }
+  25%{
+    transform: translate3d(-10%,0,0);
+  }
+  75%{
+    transform: translate3d(10%,0,0);
+  }
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
+.movo{
+  animation:move .5s ease 1 both;
+}
+.move1{
+   animation:movee .5s ease 1 1s both;
+ }
+.movet{
+  animation:movet 2s linear 1  both;
+}
+.scale{
+  animation:scale 1s ease 1  1s both;
+}
 .header{
   width: 100%;
   height: 1.06rem;
@@ -28,6 +79,7 @@ $img:'/Static/img/';
 .content{
   width: 100%;
   height: 11.84rem;
+  overflow: hidden;
   .main{
     width: 7.02rem;
     height: 100%;
@@ -46,8 +98,8 @@ $img:'/Static/img/';
           left: .6rem;
         }
         .private-car{
-            width: 1.86rem;
-            height: .92rem;
+          width: 1.86rem;
+          height: .92rem;
           background: url($img + 'log/private-car.png') no-repeat center/contain;
           position: absolute;
           bottom: .71rem;
