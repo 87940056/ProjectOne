@@ -96,8 +96,7 @@ body {
     margin-top: 0.35rem; }
     .title .order_list li .list_number {
       font-size: 0.24rem;
-      color: #A3A2A2;
-      display: none; }
+      color: #A3A2A2; }
     .title .order_list li .Car_info {
       margin-top: 0.2rem;
       display: flex; }
