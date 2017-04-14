@@ -1,8 +1,17 @@
 <?php
 namespace App\controller;
-use App\model\musicModel;
 use Core\frameWork;
 class indexController extends frameWork{
+    function __construct(){
+        session_start();
+        if(!isset($_SESSION['screen'])){
+            $this->redirect('/screen/screen1');
+        }else{
+            if(!isset($_SESSION['login'])){
+                $this->redirect('/login');
+            }
+        }
+    }
     function index(){
         $this->display('default/Home/home');
     }

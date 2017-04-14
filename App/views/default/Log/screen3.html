@@ -9,7 +9,7 @@
 <body>
 <div class="header">
     <div class="main">
-        <a href="">跳过</a>
+        <a href="/index.php/screen/screenSession">跳过</a>
     </div>
 </div>
 <div class="content">
@@ -35,3 +35,12 @@
 </div>
 </body>
 </html>
+<script>
+    $(function(){
+        setTimeout(function(){
+            $.get('/index.php',function(){
+                window.location.href = '/index.php/screen/screenSession';
+            });
+        },3000)
+    })
+</script>

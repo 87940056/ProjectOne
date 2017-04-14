@@ -14,13 +14,12 @@ class loginController extends frameWork{
 //    }
     function index()
     {
-        $this->display('admin/Login/login_home');
-//        session_start();
-//        if(isset($_SESSION['login'])){
-//            $this->redirect('/index.php/index');
-//        }else{
-//            $this->display('login');
-//        }
+        session_start();
+        if(isset($_SESSION['login'])){
+            $this->redirect('');
+        }else{
+            $this->display('admin/Login/login_home');
+        }
     }
     function login(){
         $this->display('admin/Login/Login');
@@ -28,17 +27,16 @@ class loginController extends frameWork{
 
     function check()
     {
-
-//        if($_POST['user']==='admin'&&$_POST['password']==='123456'){
-//            session_start();
-//            $_SESSION['login']='true';
-//            $this->redirect('/index.php/index');
+        if($_POST['username']==='admin'&&$_POST['password']==='123456'){
+            session_start();
+            $_SESSION['login']='true';
+            $this->redirect('');
 //            if($_POST['check']==='on'){
 //                setcookie('login','true',time()+20,'/');
 //            }
-//        }else{
-//            header('location:/index.php/login');
-//        }
+        }else{
+            header('location:/index.php/login');
+        }
     }
     function logout()
     {
